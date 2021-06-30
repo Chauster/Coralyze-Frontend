@@ -1,0 +1,48 @@
+.About {
+    height: 94vh;
+
+    &__image{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../images/team.svg");
+        background-size: 40%;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:before {
+            content:"Who we are";
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:var(--FontLg);    
+            font-weight: bold;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+    }
+}
+.custom-shape-divider-bottom-1624942813 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    top: 100%;
+    transform: rotate(360deg);
+}
+
+.custom-shape-divider-bottom-1624942813 svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 160px;
+}
+
+.custom-shape-divider-bottom-1624942813 .shape-fill {
+    fill: #3E74FF;
+}
+
+@media(min-width: 64em) {
+
+}
