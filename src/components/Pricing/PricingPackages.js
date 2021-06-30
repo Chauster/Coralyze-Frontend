@@ -15,7 +15,7 @@ const PricingPackages = () => {
           <div className="pricing__wrapper">
             <h1 className="pricing__heading">Packages</h1>
             <div className="pricing__container">
-              <Link to="/sign-up" className="pricing__container-card">
+              <Link to="/register" className="pricing__container-card">
                 <div className="pricing__container-cardInfo">
                   <div className="icon">
                     <FaFire />
