@@ -71,7 +71,7 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">David Chau</div>
-              <div class="card__roletitle">Professional Dealer</div>
+              <div class="card__roletitle">Lead Front-end Developer</div>
               <div class="card__description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
                 cumque est necessitatibus debitis neque eveniet sequi quas
@@ -87,7 +87,7 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">Bao Lam Nguyen</div>
-              <div class="card__roletitle">Vitmanese #1</div>
+              <div class="card__roletitle">Developer</div>
               <div class="card__description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
                 cumque est necessitatibus debitis neque eveniet sequi quas
@@ -103,7 +103,7 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">Cynan Du</div>
-              <div class="card__roletitle">Vitmanese #2</div>
+              <div class="card__roletitle">Developer</div>
               <div class="card__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perferendis, dignissimos! Distinctio, quidem numquam? Sunt
@@ -118,14 +118,12 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">Armaghan Zahid</div>
-              <div class="card__roletitle">ex smoker pulled out of rehab</div>
+              <div class="card__roletitle">Developer</div>
               <div class="card__description">
-                Nicorette worked like a dream for me, at first i struggled
-                really hard to break out of my depression, but smoking really (i
-                mean really), helped me get through it all. All in all, i
-                believe i have come a long way, and made solid progress in my
-                journey towards becoming a better ex- rehab patient.
-                <br />- bao the dealer was here
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus quae, quos vero placeat nesciunt nostrum ut magnam
+                exercitationem fuga ducimus praesentium ipsum officia delectus
+                asperiores.
               </div>
             </div>
           </div>
