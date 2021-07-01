@@ -40,7 +40,7 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">Long Le</div>
-              <div class="card__roletitle">Potential Suspect</div>
+              <div class="card__roletitle">Lead Developer</div>
               <div class="card__description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
                 cumque est necessitatibus debitis neque eveniet sequi quas
@@ -56,11 +56,12 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">Kishen Kumar</div>
-              <div class="card__roletitle">
-                krokodil user - guacamole brownie expert
-              </div>
+              <div class="card__roletitle">Scrum Master</div>
               <div class="card__description">
-                cherry on top here... (blonde hair suited me)
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi rerum doloribus vel, error illum, in earum eveniet
+                facere possimus voluptatibus, ducimus molestiae assumenda
+                temporibus reiciendis?
               </div>
             </div>
 
