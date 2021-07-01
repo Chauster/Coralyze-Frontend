@@ -119,7 +119,7 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">Armaghan Zahid</div>
-              <div class="card__roletitle">Developer</div>
+              <div class="card__roletitle">Front-end Developer</div>
               <div class="card__description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Temporibus quae, quos vero placeat nesciunt nostrum ut magnam
