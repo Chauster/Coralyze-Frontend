@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useState, setState } from 'react';
 import { Button } from '../Button';
 import ContactUs from '../../images/contactus.svg';
 import './contactForm.css';
 
-function contactForm() {
+function ContactForm() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [question, setQuestion] = useState('');
+
+  let handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  let handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  let handlePhoneChange = (event) => {
+    setPhone(event.target.value);
+  };
+
+  let handleQuestionChange = (event) => {
+    setQuestion(event.target.value);
+  };
+
+  let handleSubmit = (event) => {
+    alert(`${name} ${email} ${phone} ${question}`);
+  };
+
   return (
     <>
       <div className="form__container">
@@ -11,7 +36,7 @@ function contactForm() {
           <img src={ContactUs} alt="" />
         </div>
         <div className="form__content-right">
-          <form className="form">
+          <form className="form" onSubmit={handleSubmit}>
             <h1>Contact Us</h1>
             <div className="form__inputs">
               <label htmlFor="name" className="form__label">
@@ -23,6 +48,8 @@ function contactForm() {
                 name="name"
                 className="form__input"
                 placeholder="Enter your name"
+                value={name}
+                onChange={handleNameChange}
               />
             </div>
             <div className="form__inputs">
@@ -35,6 +62,8 @@ function contactForm() {
                 name="email"
                 className="form__input"
                 placeholder="Enter your email"
+                value={email}
+                onChange={handleEmailChange}
               />
             </div>
             <div className="form__inputs">
@@ -47,18 +76,22 @@ function contactForm() {
                 name="phone"
                 className="form__input"
                 placeholder="Enter your contact number"
+                value={phone}
+                onChange={handlePhoneChange}
               />
             </div>
             <div className="form__inputs">
-              <label htmlFor="text-area" className="form__label">
+              <label htmlFor="question" className="form__label">
                 Questions
               </label>
               <textarea
-                id="text-area"
-                type="text-area"
-                name="text-area"
+                id="question"
+                type="question"
+                name="question"
                 className="form__input"
                 placeholder="Enter your questions"
+                value={question}
+                onChange={handleQuestionChange}
               />
             </div>
             <div className="form__btn">
@@ -73,4 +106,4 @@ function contactForm() {
   );
 }
 
-export default contactForm;
+export default ContactForm;
