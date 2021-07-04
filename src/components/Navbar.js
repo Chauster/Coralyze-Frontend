@@ -94,6 +94,7 @@ const Navbar = () => {
           <NavLink to="/documentation">Documentation</NavLink>
           <NavLink to="/contact">Contact Us</NavLink>
           <NavLink to="/pricing">Pricing</NavLink>
+          <NavLink to="/dashboard">Dashboard</NavLink>
         </Nav>
         <ButtonContainer>
           <Link to="/login">
