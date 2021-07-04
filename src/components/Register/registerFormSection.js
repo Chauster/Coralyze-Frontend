@@ -7,7 +7,7 @@ function registerFormSection() {
     <>
       <div className="section">
       <form className="form">
-        <h1>Login</h1>
+        <h1>Register</h1>
         <div className="form__inputs">
           <label htmlFor="name" className="form__label">
             Username
