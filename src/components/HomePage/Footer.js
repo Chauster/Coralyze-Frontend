@@ -1,41 +1,42 @@
 import React, { useRef, useEffect } from 'react';
 import './Footer.scss';
-import logo from '../../images/logo-2.png';
-import github from '../../images/icon-github.svg';
-import facebook from '../../images/icon-facebook.svg';
-import instagram from '../../images/icon-instagram.svg';
+import logo from '../../images/logo-2.png'
+import github from '../../images/icon-github.svg'
+import facebook from '../../images/icon-facebook.svg'
+import instagram from '../../images/icon-instagram.svg'
 const Footer = () => {
-  return (
+    return (
     <footer class="footer">
-      <a href="/" class="footer__logo">
-        <img src={logo} alt=""></img>
-      </a>
+        <a href="/" class="footer__logo">
+            <img src={logo} alt=""></img>
+        </a>
 
-      <div className="footer__social__links">
-        <a href="/" class="github">
-          <img src={github} alt="GitHub" height="20px" width="20px"></img>
-        </a>
-        <a href="/">
-          <img src={facebook} alt="Facebook"></img>
-        </a>
-        <a href="/" class="instagram">
-          <img src={instagram} alt="Instagram" height="20px" width="20px"></img>
-        </a>
-      </div>
+        <div className="footer__social__links">
+            <a href="/" class="github">
+                <img src={github} alt="GitHub" height="20px" width="20px"></img>
+            </a>
+            <a href="/">
+                <img src={facebook} alt="Facebook"></img>
+            </a>
+            <a href="/" class="instagram">
+                <img src={instagram} alt="Instagram" height="20px" width="20px"></img>
+            </a>
+        </div>
 
-      <div className="footer__links col1">
-        <a href="/">FAQ</a>
-        <a href="/about">About Us</a>
-        <a href="/contact">Contact Us</a>
-      </div>
-      <div className="footer__links col2">
-        <a href="/documentation">Documentation</a>
-        <a href="/">Blog</a>
-        <a href="/">Privacy Policy</a>
-      </div>
-      <div className="footer__copyright">Team INJECT. All rights reserved.</div>
+        <div className="footer__links col1">
+            <a href="/">FAQ</a>
+            <a href="/">About Us</a>
+            <a href="/">Contact Us</a>
+        </div>
+        <div className="footer__links col2">
+            <a href="/">Documentation</a>
+            <a href="/">Blog</a>
+            <a href="/">Privacy Policy</a>
+        </div>
+            <div className="footer__copyright">Team INJECT. All rights reserved.
+            </div>
     </footer>
-  );
-};
+    )
+}
 
-export default Footer;
+export default Footer
