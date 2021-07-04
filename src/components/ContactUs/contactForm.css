@@ -53,7 +53,8 @@
 }
 
 .form h1 {
-  font-size: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
   text-align: start;
   width: 80%;
   margin-bottom: 1rem;
@@ -66,7 +67,9 @@
 
 .form__inputs textarea {
   resize: none;
-  height: 8em;
+  height: 8rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 .form__inputs p {
@@ -88,6 +91,10 @@
   height: 40px;
   width: 100%;
   border: none;
+}
+
+.form__input textarea {
+  padding-top: 10px;
 }
 
 .form__input::placeholder {

@@ -46,7 +46,7 @@ function contactForm() {
                 type="phone"
                 name="phone"
                 className="form__input"
-                placeholder="Enter your number"
+                placeholder="Enter your contact number"
               />
             </div>
             <div className="form__inputs">
@@ -58,7 +58,7 @@ function contactForm() {
                 type="text-area"
                 name="text-area"
                 className="form__input"
-                placeholder="Enter your concerns"
+                placeholder="Enter your questions"
               />
             </div>
             <div className="form__btn">
