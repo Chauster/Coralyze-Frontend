@@ -1,4 +1,6 @@
 import React from 'react';
+import CTA from '../components/HomePage/CTA';
+import Footer from '../components/HomePage/Footer';
 import PricingBanner from '../components/Pricing/PricingBanner';
 import PricingPackages from '../components/Pricing/PricingPackages';
 
@@ -7,7 +9,8 @@ const Pricing = () => {
     <>
       <PricingBanner></PricingBanner>
       <PricingPackages></PricingPackages>
-      {/* Footer obj */}
+      <CTA></CTA>
+      <Footer></Footer>
     </>
   );
 };

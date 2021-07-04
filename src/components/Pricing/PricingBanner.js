@@ -5,22 +5,28 @@ import saleimg from '../../images/saletags.svg';
 
 function PricingBanner() {
   return (
-    <div className="outer__section">
-      <div className="banner__text">
+    <section class="banner">
+      <div className="banner__data">
         <h1>Competitive Pricing.</h1>
-        <p>
-          The ability to lease our servers for remote access to CCTV feed.
-          Having your own server means more.
-        </p>
-        <p>More storage. More security. More benefits.</p>
-        <a href="#pricing_packages">
-          <Button buttonSize="btn--wide" buttonColor="blue">
-            View Options
-          </Button>
-        </a>
+        <div className="banner_text">
+          <p>
+            The ability to lease our servers for remote access to CCTV feed.
+          </p>
+          <p>Having your own server means more</p>
+          <p>More storage. More security. More benefits.</p>
+          <div className="banner__button">
+            <a href="#pricing_packages">
+              <Button buttonSize="btn--wide" buttonColor="blue">
+                View Options
+              </Button>
+            </a>
+          </div>
+        </div>
       </div>
-      <img src={saleimg} alt="saletags" className="banner__img" />
-    </div>
+      <div className="banner__image">
+        <img src={saleimg} alt="sale-image" />
+      </div>
+    </section>
   );
 }
 
