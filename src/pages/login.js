@@ -1,12 +1,15 @@
 import React from 'react';
+import Footer from '../components/HomePage/Footer';
 import LoginFormSection from '../components/Login/loginFormSection';
 
-function login() {
+const login = () => {
   return (
-    <div>
+    <>
       <LoginFormSection></LoginFormSection>
-    </div>
+      {/* for testing purposes - footer may be removed later */}
+      <Footer></Footer>
+    </>
   );
-}
+};
 
 export default login;

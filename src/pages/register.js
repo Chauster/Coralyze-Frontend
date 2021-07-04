@@ -1,12 +1,14 @@
 import React from 'react';
+import Footer from '../components/HomePage/Footer';
 import RegisterFormSection from '../components/Register/registerFormSection';
 
-function register() {
+const register = () => {
   return (
-    <div>
+    <>
       <RegisterFormSection></RegisterFormSection>
-    </div>
+      <Footer></Footer>
+    </>
   );
-}
+};
 
 export default register;

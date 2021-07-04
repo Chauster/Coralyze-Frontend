@@ -7,8 +7,8 @@ function PricingBanner() {
   return (
     <section class="banner">
       <div className="banner__data">
-        <h1>Competitive Pricing.</h1>
         <div className="banner_text">
+          <h1>Competitive Pricing.</h1>
           <p>
             The ability to lease our servers for remote access to CCTV feed.
           </p>

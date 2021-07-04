@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from '../images/logo-2.png';
 import styles from 'styled-components';
-import {Link} from 'react-router-dom';
-import {FaBars} from 'react-icons/fa'
+import { Link } from 'react-router-dom';
+import { FaBars } from 'react-icons/fa';
 import { Button } from './Button';
 
 const NavbarContainer = styles.div`
@@ -79,29 +79,33 @@ color: #fff;
     font-size: 1.8rem; 
     cursor: pointer;
 }
-`
+`;
 
 const Navbar = () => {
-    return (
-        <NavbarContainer>
-            <NavbarWrapper>
-                <a href="/"><Logo src={logo} alt="Coralyze" /></a>
-                    <Nav>
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/about">About</NavLink>
-                        <NavLink to="/documentation">Documentation</NavLink>
-                        <NavLink to="/contact">Contact Us</NavLink>
-                        <NavLink to="/pricing">Pricing</NavLink>
-                    </Nav>
-                    <ButtonContainer>
-                    <Button buttonSize="btn--medium" buttonColor="blue">
-                        Login
-                    </Button>
-                    </ButtonContainer>
-            </NavbarWrapper>
-            <Spans />
-        </NavbarContainer>
-    )
-}
+  return (
+    <NavbarContainer>
+      <NavbarWrapper>
+        <a href="/">
+          <Logo src={logo} alt="Coralyze" />
+        </a>
+        <Nav>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/documentation">Documentation</NavLink>
+          <NavLink to="/contact">Contact Us</NavLink>
+          <NavLink to="/pricing">Pricing</NavLink>
+        </Nav>
+        <ButtonContainer>
+          <Link to="/login">
+            <Button buttonSize="btn--medium" buttonColor="blue">
+              Login
+            </Button>
+          </Link>
+        </ButtonContainer>
+      </NavbarWrapper>
+      <Spans />
+    </NavbarContainer>
+  );
+};
 
-export default Navbar
+export default Navbar;
