@@ -57,6 +57,18 @@ function registerFormSection() {
           />
         </div>
         <div className="form__inputs">
+          <label htmlFor="cpassword" className="form__label">
+            Confirm Password
+          </label>
+          <input
+            id="cpassword"
+            type="password"
+            name="cpassword"
+            className="form__input"
+            placeholder="Confrim your password"
+          />
+        </div>
+        <div className="form__inputs">
           <label htmlFor="email" className="form__label">
             Email
           </label>
