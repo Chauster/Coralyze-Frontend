@@ -1,12 +1,12 @@
-import React from 'react';
-import './MeetTheTeam.scss';
-import member1 from '../../images/portraits/saamir.jpg';
-import member2 from '../../images/portraits/long.jpg';
-import member3 from '../../images/portraits/kishen.png';
-import member4 from '../../images/portraits/portrait.png';
-import member5 from '../../images/portraits/baolam.jpg';
-import member6 from '../../images/portraits/cynan.jpg';
-import member7 from '../../images/portraits/armaghan.jpg';
+import React from "react";
+import "./MeetTheTeam.scss";
+import member1 from "../../images/portraits/saamir.jpg";
+import member2 from "../../images/portraits/long.jpg";
+import member3 from "../../images/portraits/kishen.png";
+import member4 from "../../images/portraits/david.jpg";
+import member5 from "../../images/portraits/baolam.jpg";
+import member6 from "../../images/portraits/cynan.jpg";
+import member7 from "../../images/portraits/armaghan.jpg";
 const test = () => {
   return (
     <div>
