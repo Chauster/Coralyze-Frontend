@@ -65,7 +65,7 @@ function registerFormSection() {
             type="password"
             name="cpassword"
             className="form__input"
-            placeholder="Confrim your password"
+            placeholder="Confirm your password"
           />
         </div>
         <div className="form__inputs">
