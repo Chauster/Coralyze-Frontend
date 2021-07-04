@@ -27,6 +27,7 @@ function ContactForm() {
 
   let handleSubmit = (event) => {
     alert(`${name} ${email} ${phone} ${question}`);
+    event.preventDefault();
   };
 
   return (
