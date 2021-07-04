@@ -6,6 +6,7 @@ import Contact from './pages/contact';
 import Pricing from './pages/pricing';
 import Login from './pages/login';
 import Register from './pages/register';
+import Faqs from './pages/faqs';
 import PageNotFound from './pages/pagenotfound';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -23,6 +24,7 @@ function App() {
             <Route path="/pricing" component={Pricing}></Route>
             <Route path="/login" component={Login}></Route>
             <Route path="/register" component={Register}></Route>
+            <Route path="/faqs" component={Faqs}></Route>
             <Route path="*" component={PageNotFound}></Route>
           </Switch>
         </div>
