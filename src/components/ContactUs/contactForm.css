@@ -26,6 +26,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .form__content-left img {
@@ -93,7 +94,7 @@
   border: none;
 }
 
-.form__input textarea {
+.form__inputs textarea {
   padding-top: 10px;
 }
 
@@ -106,4 +107,7 @@
   width: 80%;
   height: 50px;
   margin-top: 10px;
+  /* align-items: center; */
+  display: flex;
+  justify-content: center;
 }

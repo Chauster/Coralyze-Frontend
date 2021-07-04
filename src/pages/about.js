@@ -2,14 +2,16 @@ import React from 'react';
 import About from '../components/About/AboutBanner';
 import Statement from '../components/About/MissionStatement';
 import MeetTheTeam from '../components/About/MeetTheTeam';
+import Footer from '../components/HomePage/Footer';
 const about = () => {
-    return (
-        <div>
-            <About></About>
-            <Statement></Statement>
-            <MeetTheTeam></MeetTheTeam>
-        </div>
-    )
-}
+  return (
+    <div>
+      <About></About>
+      <Statement></Statement>
+      <MeetTheTeam></MeetTheTeam>
+      <Footer></Footer>
+    </div>
+  );
+};
 
-export default about
+export default about;
