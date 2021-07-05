@@ -27,10 +27,8 @@
 }
 
 .logo {
+  margin-top: 10px;
   justify-self: start;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
   display: flex;
   align-items: center;
 }
