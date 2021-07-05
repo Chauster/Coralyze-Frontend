@@ -1,112 +1,117 @@
-import React from 'react';
-import logo from '../images/logo-2.png';
-import styles from 'styled-components';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars } from 'react-icons/fa';
+import logo from '../images/logo-2.png';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { Button } from './Button';
+import './Navbar.css';
+import { IconContext } from 'react-icons/lib';
 
-const NavbarContainer = styles.div`
-margin: 0;
-padding: 10px;
-line-height: 1.3;
-font-family: Montserrat;
-font-weight: 300;
-display: flex;
-justify-content: space-between;
-`;
-const NavbarWrapper = styles.div`
-width: 1920px;
-height: 100%;
-margin: 0 auto;
-z-index: 20;
-display: flex;
-position: relative;
-align-items: center;
-justify-content: space-between;
-`;
-const Logo = styles.img`
-padding-top: 8px;
-padding-left: 10px
-width: 140px;
-height: 30px;
-max-width: 100% !important;
-`;
-const Nav = styles.nav`
-position: relative;
-@media screen and (max-width: 768px) { // Experimental Mobile menu
-    display: none;
-  }
-`;
-const NavLink = styles(Link)`
-padding: 1.0625rem 1.5rem;
-color: #fff;
-font-size: 0.875rem;
-text-decoration: none;
+function Navbar() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
 
-&:hover {
-    color: #3E74FF;
-}
-`;
-const ButtonContainer = styles.div`
-display: flex;
-align-items: center;
-justify-content: space-between;
-`;
-// const Button = styles.div`
-// padding: 0.875rem 2.1875rem;
-// border-radius: 5px;
-// border: 0;
-// color: white;
-// font-weight: 400;
-// cursor: pointer;
-// background: #007cff;
-// font-size: 0.875rem;
-// -webkit-transition: opacity 300ms ease-in-out;
-// transition: opacity 300ms ease-in-out;
-// @media screen and (max-width: 768px) { // Experimental Mobile menu
-//     display: none;
-//   }
-// `;
-const Spans = styles(FaBars)`
-display: none;
-color: #fff;
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
 
-@media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.8rem; 
-    cursor: pointer;
-}
-`;
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
 
-const Navbar = () => {
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener('resize', showButton);
+
   return (
-    <NavbarContainer>
-      <NavbarWrapper>
-        <a href="/">
-          <Logo src={logo} alt="Coralyze" />
-        </a>
-        <Nav>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/documentation">Documentation</NavLink>
-          <NavLink to="/contact">Contact Us</NavLink>
-          <NavLink to="/pricing">Pricing</NavLink>
-          <NavLink to="/dashboard">Dashboard</NavLink>
-        </Nav>
-        <ButtonContainer>
-          <Link to="/login">
-            <Button buttonSize="btn--medium" buttonColor="blue">
-              Login
-            </Button>
-          </Link>
-        </ButtonContainer>
-      </NavbarWrapper>
-      <Spans />
-    </NavbarContainer>
+    <>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        <div className="navbar__container">
+          <div className="navbar__wrapper wrapper">
+            <a href="/">
+              <img className="logo" src={logo} alt="Coralyze" />
+            </a>
+            <div className="menu__icon" onClick={handleClick}>
+              {click ? <FaTimes /> : <FaBars />}
+            </div>
+            <ul className={click ? 'nav__menu active' : 'nav__menu'}>
+              <li className="nav__item">
+                <Link to="/" className="nav__links" onClick={closeMobileMenu}>
+                  Home
+                </Link>
+              </li>
+              <li className="nav__item">
+                <Link
+                  to="/about"
+                  className="nav__links"
+                  onClick={closeMobileMenu}
+                >
+                  About
+                </Link>
+              </li>
+              <li className="nav__item">
+                <Link
+                  to="/documentation"
+                  className="nav__links"
+                  onClick={closeMobileMenu}
+                >
+                  Documentation
+                </Link>
+              </li>
+              <li className="nav__item">
+                <Link
+                  to="/contact"
+                  className="nav__links"
+                  onClick={closeMobileMenu}
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li className="nav__item">
+                <Link
+                  to="/pricing"
+                  className="nav__links"
+                  onClick={closeMobileMenu}
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li className="nav__item">
+                <Link
+                  to="/dashboard"
+                  className="nav__links"
+                  onClick={closeMobileMenu}
+                >
+                  Dashboard
+                </Link>
+              </li>
+              <li className="nav__btn">
+                {button ? (
+                  <Link to="/login" className="btn__container">
+                    <Button buttonStyle="btn--outline">Login</Button>
+                  </Link>
+                ) : (
+                  <Link
+                    to="/login"
+                    className="btn__container"
+                    onClick={closeMobileMenu}
+                  >
+                    <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
+                      Login
+                    </Button>
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </IconContext.Provider>
+    </>
   );
-};
+}
 
 export default Navbar;

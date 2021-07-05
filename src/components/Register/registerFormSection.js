@@ -94,7 +94,7 @@ function registerFormSection() {
           </div>
           <div className="form__btn">
             <Button buttonSize="btn--wide" buttonColor="blue" type="submit">
-              Submit
+              Register Now
             </Button>
           </div>
         </form>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import './loginFormSection.css';
 
@@ -35,8 +36,16 @@ function loginFormSection() {
           </div>
           <div className="form__btn">
             <Button buttonSize="btn--wide" buttonColor="blue" type="submit">
-              Submit
+              Login
             </Button>
+          </div>
+          <div className="form__register">
+            <p>No account? Don't worry.</p>
+            <Link to="/register">
+              <Button buttonSize="btn--small" buttonColor="blue">
+                Create a new account here.
+              </Button>
+            </Link>
           </div>
         </form>
       </div>

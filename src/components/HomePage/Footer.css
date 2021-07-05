@@ -9,11 +9,13 @@
   .footer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3] 2fr;
-        grid-template-columns: repeat(3, 1fr) 2fr;
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    -ms-grid-columns: (1fr) [3] 2fr;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    -ms-grid-rows: (1fr) [2];
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      'logo links1 links2 cta'
+      'social links1 links2 copyright';
     justify-items: start;
   }
 }
@@ -40,12 +42,12 @@
 
 .footer__social__links .github {
   -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
 }
 
 .footer__social__links .instagram {
   -webkit-filter: invert(100%);
-          filter: invert(100%);
+  filter: invert(100%);
 }
 
 @media (min-width: 48em) {
@@ -58,8 +60,8 @@
   .footer__social__links {
     grid-area: social;
     -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    -ms-grid-row-align: end;
+    align-self: end;
   }
 }
 
@@ -78,22 +80,22 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 0.9375rem;
 }
 
 @media (min-width: 64em) {
   .footer__links {
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
   }
 }
 
@@ -123,7 +125,7 @@
     grid-area: cta;
     text-align: right;
     -ms-grid-column-align: end;
-        justify-self: end;
+    justify-self: end;
   }
 }
 
@@ -156,10 +158,10 @@
   .footer__copyright {
     grid-area: copyright;
     -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
+    -ms-grid-row-align: end;
+    align-self: end;
     -ms-grid-column-align: end;
-        justify-self: end;
+    justify-self: end;
   }
 }
 /*# sourceMappingURL=Footer.css.map */
