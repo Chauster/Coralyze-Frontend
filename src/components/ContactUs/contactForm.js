@@ -37,7 +37,7 @@ function ContactForm() {
           <img src={ContactUs} alt="" />
         </div>
         <div className="form__content-right">
-          <form className="form" onSubmit={handleSubmit}>
+          <form autoComplete="off" className="form" onSubmit={handleSubmit}>
             <h1>Contact Us</h1>
             <div className="form__inputs">
               <label htmlFor="name" className="form__label">
