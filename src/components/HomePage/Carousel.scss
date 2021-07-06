@@ -61,3 +61,13 @@ $animationSpeed: 30s;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 25.875em) {
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      text-align: center;
+    }
+  }
+}

@@ -12,7 +12,9 @@ import php from '../../images/carousel/php.png'
 const Carousel = () => {
     return (
 <div>
-	<h1 class="title">Technologies Used</h1>
+	<div class="title">
+		<h1>Technologies Used</h1>
+		</div>
         <div class="slider">
 	    	<div class="slide-track">
 				<div class="slide">

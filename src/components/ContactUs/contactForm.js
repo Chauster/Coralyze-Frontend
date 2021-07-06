@@ -1,6 +1,6 @@
 import React, { useState, setState } from 'react';
 import { Button } from '../Button';
-import ContactUs from '../../images/contactus.svg';
+import ContactUs from '../../images/contactusv2.svg';
 import './contactForm.css';
 
 function ContactForm() {
@@ -83,14 +83,14 @@ function ContactForm() {
             </div>
             <div className="form__inputs">
               <label htmlFor="question" className="form__label">
-                Questions
+                Enquiry
               </label>
               <textarea
                 id="question"
                 type="question"
                 name="question"
                 className="form__input"
-                placeholder="Enter your questions"
+                placeholder="Ask us anything!"
                 value={question}
                 onChange={handleQuestionChange}
               />

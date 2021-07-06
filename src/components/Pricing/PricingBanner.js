@@ -7,13 +7,13 @@ function PricingBanner() {
   return (
     <section class="banner">
       <div className="banner__data">
-        <div className="banner_text">
+        <div className="banner__text">
           <h1>Competitive Pricing.</h1>
           <p>
-            The ability to lease our servers for remote access to CCTV feed.
+            The ability to lease our servers for remote access to CCTV feed.<br/>
+            Having your own server means more
+            More storage. More security. More benefits.
           </p>
-          <p>Having your own server means more</p>
-          <p>More storage. More security. More benefits.</p>
           <div className="banner__button">
             <a href="#pricing_packages">
               <Button buttonSize="btn--wide" buttonColor="blue">

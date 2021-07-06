@@ -1,17 +1,29 @@
 import React from 'react';
 import { Button } from '../Button';
-import './registerFormSection.css';
+import { CgNametag } from "react-icons/cg";
+import { GiFamilyTree } from "react-icons/gi";
+import { IoPersonCircle } from 'react-icons/io5';
+import { RiLockPasswordLine } from "react-icons/ri";
+import { HiOutlineMail } from "react-icons/hi";
+import { BiPhoneCall } from "react-icons/bi";
+// import './registerFormSection.css'; REPLACED BY SCSS
+import './registerFormSection.scss';
 
 function registerFormSection() {
   return (
     <>
-      <div className="section">
+      <div className="registersection">
         <form autoComplete="off" className="form">
-          <h1>Register</h1>
+        <h1 class="form__title">Account Registration</h1>
           <div className="form__inputs">
+          <div class="form__subtitle">
+            <div class="form__icon__firstname">
+              <CgNametag size={30}/>
+            </div>
             <label htmlFor="fname" className="form__label">
               First Name
             </label>
+            </div>
             <input
               id="fname"
               type="text"
@@ -21,9 +33,14 @@ function registerFormSection() {
             />
           </div>
           <div className="form__inputs">
+          <div class="form__subtitle">
+            <div class="form__icon__familyname">
+              <GiFamilyTree size={30}/>
+            </div>
             <label htmlFor="faname" className="form__label">
               Family Name
             </label>
+            </div>
             <input
               id="faname"
               type="text"
@@ -33,9 +50,14 @@ function registerFormSection() {
             />
           </div>
           <div className="form__inputs">
+          <div class="form__subtitle">
+            <div class="form__icon__username">
+              <IoPersonCircle size={30}/>
+            </div>
             <label htmlFor="username" className="form__label">
               Username
             </label>
+            </div>
             <input
               id="username"
               type="text"
@@ -45,9 +67,14 @@ function registerFormSection() {
             />
           </div>
           <div className="form__inputs">
+          <div class="form__subtitle">
+            <div class="form__icon__password">
+              <RiLockPasswordLine size={30}/>
+            </div>
             <label htmlFor="password" className="form__label">
               Password
             </label>
+            </div>
             <input
               id="password"
               type="password"
@@ -57,9 +84,14 @@ function registerFormSection() {
             />
           </div>
           <div className="form__inputs">
+          <div class="form__subtitle">
+            <div class="form__icon__cpassword">
+              <RiLockPasswordLine size={30}/>
+            </div>
             <label htmlFor="cpassword" className="form__label">
-              Confirm Password
+              Confirm password
             </label>
+            </div>
             <input
               id="cpassword"
               type="password"
@@ -69,9 +101,14 @@ function registerFormSection() {
             />
           </div>
           <div className="form__inputs">
+          <div class="form__subtitle">
+            <div class="form__icon__email">
+              <HiOutlineMail size={30}/>
+            </div>
             <label htmlFor="email" className="form__label">
               Email
             </label>
+            </div>
             <input
               id="email"
               type="email"
@@ -81,9 +118,14 @@ function registerFormSection() {
             />
           </div>
           <div className="form__inputs">
+          <div class="form__subtitle">
+            <div class="form__icon__phnumber">
+              <BiPhoneCall size={30}/>
+            </div>
             <label htmlFor="phnumber" className="form__label">
               Phone Number
             </label>
+            </div>
             <input
               id="phnumber"
               type="text"

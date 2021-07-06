@@ -1,10 +1,12 @@
-import React from 'react'
-
+import React from 'react';
+import Sidebar from '../components/Documentation/Sidebar';
+import TechnicalSection from '../components/Documentation/TechnicalSection';
 const documentation = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <Sidebar></Sidebar>
+            <TechnicalSection></TechnicalSection>
+        </>
     )
 }
 

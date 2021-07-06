@@ -1,0 +1,142 @@
+.loginsection {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  width: auto;
+  height: 100vh;
+  
+
+  .form {
+    @media (min-width: 64em) {
+        background-color: #fff;
+    }
+    border-radius: 30px;
+    &__left {
+        @media (min-width: 64em) {
+            padding: 10%;
+            grid-area: left;
+        }
+        
+        
+    }
+    &__title {
+        color: #3E74FF;
+    }
+
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        color: #3E74FF;
+    }
+
+    &__input {
+        width: 360px;
+        border-bottom: 2px solid #808080;
+    }
+
+    &__right {
+        @media (min-width: 64em) {
+            grid-area: right;
+            padding: 5%;
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+        }
+    }
+    &__login {
+        margin-bottom: 5rem;
+    }
+    &__register {
+        margin-bottom: 2rem;
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    @media (max-width:1023px) { // IPad
+        .form {
+            &__left {
+                grid-area: middle;
+                background: none;
+                padding: 5%;
+            }
+            &__right {
+                display: none;
+            }
+            &__input {
+                width: 500px;
+            }
+            &__login {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 2rem;
+            }
+            &__register {
+                color: var(--white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 2rem;
+
+                p {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    @media (max-width:414px) { // IPhone
+        .form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__left {
+                grid-area: middle;
+                background: none;
+                padding: 25%;
+                margin:0;
+            }
+            &__right {
+                display: none;
+            }
+            &__title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 20%;
+            }
+            &__inputs {
+                padding: 5%;
+            }
+            &__input {
+                padding: 5%;
+                width: 260px;
+            }
+            &__login {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 2rem;
+            }
+            &__register {
+                color: var(--white);
+
+                p {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    @media (min-width: 64em) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "left right";
+    }
+  }
+}

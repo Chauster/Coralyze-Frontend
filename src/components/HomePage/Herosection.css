@@ -59,7 +59,13 @@
   padding-left: 10%;
   padding-right: 10%;
 }
-
+@media (min-width: 40em) {
+  .hero__text {
+    flex: 2;
+    order: 1;
+    text-align: justify;
+  }
+}
 @media (min-width: 64em) {
   .hero__text {
     flex: 2;
@@ -75,10 +81,21 @@
   color: var(--white);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  text-align: left;
 }
-
+@media (min-width: 25.875em) {
+  .hero__text h1 {
+    text-align: center;
+  }
+}
+@media (min-width: 40em) {
+  .hero__text h1 {
+    text-align: center;
+  }
+}
 @media (min-width: 64em) {
   .hero__text h1 {
+    text-align: left;
     font-size: 3.25rem;
   }
 }
@@ -96,6 +113,25 @@
   text-decoration: none;
   color: #fff;
   font-weight: 300;
+}
+.hero__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 40em) {
+  .hero__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 64em) {
+  .hero__button {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
 }
 
 .mouse__container {

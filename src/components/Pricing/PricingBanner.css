@@ -8,65 +8,95 @@
 }
 
 .banner__data h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 
 .banner__text p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
+  text-align: left;
+  color: #6a707e;
+  margin-bottom: 3rem;
 }
 
 .banner__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: left;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .banner__image {
   /* position: relative; */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .banner__image img {
   width: 50%;
 }
-
+@media (min-width: 25.875em) {
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .banner h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 40em) {
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .banner img {
+    width: 60%;
+    height: 60%;
+  }
+  .banner h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media (min-width: 64em) {
   .banner {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+  .banner__button {
+    display: flex;
+    justify-content: left;
+    align-items: left;
   }
 }
