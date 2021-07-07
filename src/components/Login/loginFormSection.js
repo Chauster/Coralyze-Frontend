@@ -42,6 +42,7 @@ function LoginFormSection() {
         console.log(res.password); // undefined
         console.log(password); // current user input
       });
+    // .catch((err) => res.status(400).json('Error: ' + err));
 
     // set fields to empty after submit
     // link to dashboard after success
