@@ -35,7 +35,7 @@ function LoginFormSection() {
       .get(`http://localhost:5000/users/authenticate/${username}`)
       .then((res) => {
         res.data.password === user.password
-          ? (window.location = '/')
+          ? (window.location = '/dashboard')
           : alert(`failed`);
         console.log(res.data); // object from cloud
         console.log(res.data.password); // current user input
