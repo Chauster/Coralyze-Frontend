@@ -70,10 +70,10 @@ function RegisterFormSection() {
 
     // for testing purposes
     console.log(user);
-    alert(
-      // `${firstName} ${familyName} ${username} ${password} ${email} ${phone}`
-      `Check console log.`
-    );
+    // alert(
+    //   // `${firstName} ${familyName} ${username} ${password} ${email} ${phone}`
+    //   `Check console log.`
+    // );
 
     axios
       .post('http://localhost:5000/users/add', user)

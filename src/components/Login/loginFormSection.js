@@ -30,17 +30,14 @@ function LoginFormSection() {
 
     // for testing purposes
     console.log(user);
-    // alert(`${username} ${password}`);
-    alert(`Check console log.`);
-
-    // get username (should be unique, thus, might not need an object id)
-    // check object exists
-    // check object password
-    // login
+    // alert(`Check console log.`);
 
     axios
       .get(`http://localhost:5000/users/authenticate/${username}`)
-      .then((res) => console.log(res.data));
+      .then((res) => {
+        (res.password = password) ? alert(`success`) : alert(`failed`);
+        console.log(res.data);
+      });
 
     // set fields to empty after submit
     // link to dashboard after success
