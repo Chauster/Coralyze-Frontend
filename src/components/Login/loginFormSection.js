@@ -39,7 +39,7 @@ function LoginFormSection() {
     // login
 
     axios
-      .get('http://localhost:5000/users/authenticate')
+      .get(`http://localhost:5000/users/authenticate/${username}`)
       .then((res) => console.log(res.data));
 
     // set fields to empty after submit
