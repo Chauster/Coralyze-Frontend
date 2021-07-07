@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import { IoPersonCircle } from 'react-icons/io5';
@@ -31,6 +32,18 @@ function LoginFormSection() {
     console.log(user);
     // alert(`${username} ${password}`);
     alert(`Check console log.`);
+
+    // get username (should be unique, thus, might not need an object id)
+    // check object exists
+    // check object password
+    // login
+
+    axios
+      .get('http://localhost:5000/users/')
+      .then((res) => console.log(res.data));
+
+    // set fields to empty after submit
+    // link to dashboard after success
   };
 
   return (

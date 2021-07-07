@@ -8,8 +8,8 @@ router.route('/').get((req, res) => {
 });
 
 router.route('/add').post((req, res) => {
-  const firstname = req.body.firstname;
-  const familyname = req.body.familyname;
+  const firstName = req.body.firstName;
+  const familyName = req.body.familyName;
   const username = req.body.username;
   const password = req.body.password;
   const email = req.body.email;
@@ -17,8 +17,8 @@ router.route('/add').post((req, res) => {
   // const dob = Date.parse(req.body.dob);
 
   const newUser = new User({
-    firstname,
-    familyname,
+    firstName,
+    familyName,
     username,
     password,
     email,
@@ -47,8 +47,8 @@ router.route('/:id').delete((req, res) => {
 router.route('/update/:id').post((req, res) => {
   User.findById(req.params.id)
     .then((user) => {
-      user.firstname = req.body.firstname;
-      user.familyname = req.body.familyname;
+      user.firstName = req.body.firstName;
+      user.familyName = req.body.familyName;
       user.username = req.body.username;
       user.password = req.body.password;
       user.email = req.body.email;

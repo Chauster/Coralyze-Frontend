@@ -4,14 +4,14 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema(
   {
-    firstname: {
+    firstName: {
       type: String,
       required: true,
       unique: false,
       trim: true,
       minlength: 2,
     },
-    familyname: {
+    familyName: {
       type: String,
       required: true,
       unique: false,
