@@ -11,6 +11,7 @@ import { BiPhoneCall } from 'react-icons/bi';
 import './registerFormSection.scss';
 
 function RegisterFormSection() {
+  const [_id, setID] = useState('');
   const [firstName, setFirstName] = useState('');
   const [familyName, setFamilyName] = useState('');
   const [username, setUsername] = useState('');
@@ -20,6 +21,10 @@ function RegisterFormSection() {
   const [phone, setPhone] = useState('');
 
   // componentDidMount
+
+  let handleIDChange = (event) => {
+    setID(event.target.value);
+  };
 
   let handleFirstNameChange = (event) => {
     setFirstName(event.target.value);
@@ -53,6 +58,7 @@ function RegisterFormSection() {
     event.preventDefault();
 
     const user = {
+      _id: username,
       firstName: firstName,
       familyName: familyName,
       username: username,
@@ -135,7 +141,7 @@ function RegisterFormSection() {
               className="form__input"
               placeholder="Enter your username"
               value={username}
-              onChange={handleUsernameChange}
+              onChange={(handleIDChange, handleUsernameChange)}
             />
           </div>
           <div className="form__inputs">

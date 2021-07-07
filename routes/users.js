@@ -8,6 +8,7 @@ router.route('/').get((req, res) => {
 });
 
 router.route('/add').post((req, res) => {
+  const _id = req.body._id;
   const firstName = req.body.firstName;
   const familyName = req.body.familyName;
   const username = req.body.username;
@@ -17,6 +18,7 @@ router.route('/add').post((req, res) => {
   // const dob = Date.parse(req.body.dob);
 
   const newUser = new User({
+    _id,
     firstName,
     familyName,
     username,
@@ -29,6 +31,12 @@ router.route('/add').post((req, res) => {
   newUser
     .save()
     .then(() => res.json('User added!'))
+    .catch((err) => res.status(400).json('Error: ' + err));
+});
+
+router.route('/:id').get((req, res) => {
+  User.findById(req.params.id)
+    .then((users) => res.json(users))
     .catch((err) => res.status(400).json('Error: ' + err));
 });
 
@@ -47,6 +55,7 @@ router.route('/:id').delete((req, res) => {
 router.route('/update/:id').post((req, res) => {
   User.findById(req.params.id)
     .then((user) => {
+      user._id = req.body._id;
       user.firstName = req.body.firstName;
       user.familyName = req.body.familyName;
       user.username = req.body.username;

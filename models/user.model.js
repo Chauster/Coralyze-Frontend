@@ -4,6 +4,13 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema(
   {
+    _id: {
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
+      minlength: 3,
+    },
     firstName: {
       type: String,
       required: true,
