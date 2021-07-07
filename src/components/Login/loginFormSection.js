@@ -30,13 +30,17 @@ function LoginFormSection() {
 
     // for testing purposes
     console.log(user);
-    // alert(`Check console log.`);
 
     axios
       .get(`http://localhost:5000/users/authenticate/${username}`)
       .then((res) => {
-        (res.password = password) ? alert(`success`) : alert(`failed`);
-        console.log(res.data);
+        res.data.password === user.password
+          ? (window.location = '/')
+          : alert(`failed`);
+        console.log(res.data); // object from cloud
+        console.log(res.data.password); // current user input
+        console.log(res.password); // undefined
+        console.log(password); // current user input
       });
 
     // set fields to empty after submit
