@@ -1,4 +1,4 @@
-import React, { useState, setState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import { IoPersonCircle } from 'react-icons/io5';
@@ -20,9 +20,17 @@ function LoginFormSection() {
   };
 
   let handleSubmit = (event) => {
-    // for testing purposes
-    alert(`${username} ${password}`);
     event.preventDefault();
+
+    const user = {
+      username: username,
+      password: password,
+    };
+
+    // for testing purposes
+    console.log(user);
+    // alert(`${username} ${password}`);
+    alert(`Check console log.`);
   };
 
   return (

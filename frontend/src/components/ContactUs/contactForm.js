@@ -1,4 +1,4 @@
-import React, { useState, setState } from 'react';
+import React, { useState } from 'react';
 import { Button } from '../Button';
 import ContactUs from '../../images/contactusv2.svg';
 import './contactForm.css';

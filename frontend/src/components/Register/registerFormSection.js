@@ -1,4 +1,4 @@
-import React, { useState, setState } from 'react';
+import React, { useState } from 'react';
 import { Button } from '../Button';
 import { CgNametag } from 'react-icons/cg';
 import { GiFamilyTree } from 'react-icons/gi';
@@ -17,6 +17,8 @@ function RegisterFormSection() {
   // const [confirmPassword, setConfirmPassword] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+
+  // componentDidMount
 
   let handleFirstNameChange = (event) => {
     setFirstName(event.target.value);
@@ -47,11 +49,24 @@ function RegisterFormSection() {
   };
 
   let handleSubmit = (event) => {
-    // for testing purposes
-    alert(
-      `${firstName} ${familyName} ${username} ${password} ${email} ${phone}`
-    );
     event.preventDefault();
+
+    const user = {
+      firstName: firstName,
+      familyName: familyName,
+      username: username,
+      password: password,
+      // confirmPassword: setConfirmPassword,
+      email: email,
+      phone: phone,
+    };
+
+    // for testing purposes
+    console.log(user);
+    alert(
+      // `${firstName} ${familyName} ${username} ${password} ${email} ${phone}`
+      `Check console log.`
+    );
   };
 
   return (
