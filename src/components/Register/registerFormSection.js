@@ -228,7 +228,7 @@ function RegisterFormSection() {
               minLength="10"
               pattern="[-+]?[0-9]"
               id="phnumber"
-              type="number"
+              type="numeric"
               name="phnumber"
               className="form__input"
               placeholder="Enter your phone number"

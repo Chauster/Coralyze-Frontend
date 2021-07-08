@@ -123,9 +123,10 @@
 }
 
 .form__input:required {
-  border: none;
+  /* border: none; */
+  border-bottom: 2px solid rgb(89, 211, 105);
 }
 
 .form__input:required:invalid {
-  border: 2px solid rgb(212, 52, 52);
+  border-bottom: 2px solid rgb(212, 52, 52);
 }

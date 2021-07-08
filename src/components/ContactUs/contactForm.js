@@ -81,7 +81,7 @@ function ContactForm() {
                 minLength="10"
                 pattern="[-+]?[0-9]"
                 id="phone"
-                type="number"
+                type="numeric"
                 name="phone"
                 className="form__input"
                 placeholder="Enter your contact number"
