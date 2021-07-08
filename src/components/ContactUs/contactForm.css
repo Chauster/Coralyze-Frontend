@@ -114,11 +114,18 @@
     align-items: center;
   }
 }
-@media (min-width:40em) {
+@media (min-width: 40em) {
   .form__btn {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+}
+
+.form__input:required {
+  border: none;
+}
+
+.form__input:required:invalid {
+  border: 2px solid rgb(212, 52, 52);
 }
