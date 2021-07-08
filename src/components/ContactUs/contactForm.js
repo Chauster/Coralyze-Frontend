@@ -79,7 +79,7 @@ function ContactForm() {
               <input
                 required
                 minLength="10"
-                pattern="[-+]?[0-9]"
+                // pattern="[-+]?[0-9]"
                 id="phone"
                 type="numeric"
                 name="phone"

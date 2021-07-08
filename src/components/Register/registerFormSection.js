@@ -70,16 +70,20 @@ function RegisterFormSection() {
 
     // for testing purposes
     console.log(user);
-    // alert(
-    //   // `${firstName} ${familyName} ${username} ${password} ${email} ${phone}`
-    //   `Check console log.`
-    // );
 
-    axios
-      .post('http://localhost:5000/users/add', user)
-      .then((res) => console.log(res.data));
+    checkIfUserExists(user);
 
     // set state of form fields to empty after submit
+  };
+
+  let checkIfUserExists = (user) => {
+    axios.get(`http://localhost:5000/users/${username}`).then((res) => {
+      console.log(res.data); // object from cloud
+    })
+      ? console.log('username already exists')
+      : axios
+          .post('http://localhost:5000/users/add', user)
+          .then((res) => console.log(res.data));
   };
 
   return (
@@ -227,7 +231,7 @@ function RegisterFormSection() {
             <input
               required
               minLength="10"
-              pattern="[-+]?[0-9]"
+              // pattern="[-+]?[0-9]"
               id="phnumber"
               type="numeric"
               name="phnumber"
