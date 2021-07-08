@@ -73,3 +73,12 @@
   margin-left: -50px;
   cursor: pointer;
 } */
+
+.form__input:required {
+  /* border: none; */
+  border-bottom: 2px solid rgb(89, 211, 105);
+}
+
+.form__input:required:invalid {
+  border-bottom: 2px solid rgb(212, 52, 52);
+}

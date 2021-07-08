@@ -79,6 +79,7 @@ function ContactForm() {
               <input
                 required
                 minLength="10"
+                maxLength="10"
                 // pattern="[-+]?[0-9]"
                 id="phone"
                 type="numeric"
@@ -96,11 +97,12 @@ function ContactForm() {
               <textarea
                 required
                 minLength="10"
+                maxLength="200"
                 id="question"
                 type="question"
                 name="question"
                 className="form__input"
-                placeholder="Ask us anything!"
+                placeholder="Ask us anything! (max 200 characters)"
                 value={question}
                 onChange={handleQuestionChange}
               />
