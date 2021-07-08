@@ -183,11 +183,12 @@ function RegisterFormSection() {
               </label>
             </div>
             <input
+              disabled
               id="cpassword"
               type="password"
               name="cpassword"
               className="form__input"
-              placeholder="Confirm your password"
+              placeholder="Confirm your password (field currently disabled)"
               // value={confirmPassword}
               // onChange={handleConfirmPasswordChange}
             />
