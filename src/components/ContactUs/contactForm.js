@@ -44,6 +44,8 @@ function ContactForm() {
                 Name
               </label>
               <input
+                required
+                minLength="2"
                 id="name"
                 type="text"
                 name="name"
@@ -58,6 +60,7 @@ function ContactForm() {
                 Email
               </label>
               <input
+                required
                 id="email"
                 type="email"
                 name="email"
@@ -72,6 +75,8 @@ function ContactForm() {
                 Phone Number
               </label>
               <input
+                required
+                minLength="10"
                 id="phone"
                 type="phone"
                 name="phone"
@@ -86,6 +91,8 @@ function ContactForm() {
                 Enquiry
               </label>
               <textarea
+                required
+                minLength="10"
                 id="question"
                 type="question"
                 name="question"

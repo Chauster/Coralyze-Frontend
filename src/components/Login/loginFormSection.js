@@ -64,6 +64,8 @@ function LoginFormSection() {
                 </label>
               </div>
               <input
+                required
+                minLength="3"
                 className="form__input"
                 id="name"
                 type="text"
@@ -83,6 +85,8 @@ function LoginFormSection() {
                 </label>
               </div>
               <input
+                required
+                minLength="8"
                 className="form__input"
                 id="password"
                 type="password"

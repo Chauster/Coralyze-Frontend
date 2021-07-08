@@ -97,6 +97,8 @@ function RegisterFormSection() {
               </label>
             </div>
             <input
+              required
+              minLength="2"
               id="fname"
               type="text"
               name="fname"
@@ -116,6 +118,8 @@ function RegisterFormSection() {
               </label>
             </div>
             <input
+              required
+              minLength="2"
               id="faname"
               type="text"
               name="faname"
@@ -135,6 +139,8 @@ function RegisterFormSection() {
               </label>
             </div>
             <input
+              required
+              minLength="3"
               id="username"
               type="text"
               name="username"
@@ -154,6 +160,10 @@ function RegisterFormSection() {
               </label>
             </div>
             <input
+              required
+              minLength="8"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+              title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number."
               id="password"
               type="password"
               name="password"
@@ -192,6 +202,7 @@ function RegisterFormSection() {
               </label>
             </div>
             <input
+              required
               id="email"
               type="email"
               name="email"
@@ -211,6 +222,8 @@ function RegisterFormSection() {
               </label>
             </div>
             <input
+              required
+              minLength="10"
               id="phnumber"
               type="text"
               name="phnumber"
