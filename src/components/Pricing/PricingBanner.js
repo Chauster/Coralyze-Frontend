@@ -11,7 +11,7 @@ function PricingBanner() {
           <h1>Competitive Pricing.</h1>
           <p>
             The ability to lease our servers for remote access to CCTV feed.<br/>
-            Having your own server means more
+            Having your own server means more.<br/>
             More storage. More security. More benefits.
           </p>
           <div className="banner__button">
