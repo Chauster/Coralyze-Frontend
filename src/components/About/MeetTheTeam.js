@@ -24,7 +24,7 @@ const test = () => {
                 <img src={member1}></img>
               </div>
               <div class="card__title">Saamir Hye</div>
-              <div class="card__roletitle">Project Manager</div>
+              <div class="card__roletitle">Project Manager<br/>Developer</div>
               <div class="card__description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
                 cumque est necessitatibus debitis neque eveniet sequi quas
