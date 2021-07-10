@@ -13,7 +13,9 @@ const Carousel = () => {
     return (
 <div>
 	<div class="title">
-		<h1>Technologies Used</h1>
+		<h2>Rapid delivery, effective detection</h2>
+		<h1>Powered by Technology</h1>
+		<p>Our product is utilised by powerful technologies to ensure coralyze is the best it can be.</p>
 		</div>
         <div class="slider">
 	    	<div class="slide-track">

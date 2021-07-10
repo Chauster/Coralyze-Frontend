@@ -1,6 +1,7 @@
 .form__container {
   position: relative;
-  color: #fff;
+  background: var(--ltbackground);
+  color: var(--black);
   display: flex;
   flex-direction: column;
   padding: 5%;
@@ -43,6 +44,10 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.form__content-right h1 {
+  color: var(--primary-1);
 }
 
 .form {

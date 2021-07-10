@@ -1,6 +1,5 @@
 .footer {
-    background-color: var(--dkbackground);
-    color: #fff;
+    background-color: var(--ltbackground);
     padding: 2.5rem;
     text-align: center;
 
@@ -15,7 +14,8 @@
     }
 
     a {
-        color: #fff;
+        font-size: var(--FontXs);
+        color: var(--black);
     }
 
     &__logo {
