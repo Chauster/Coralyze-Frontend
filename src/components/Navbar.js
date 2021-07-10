@@ -30,7 +30,9 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
+        
         <div className="navbar__container">
+          
           <div className="navbar__wrapper wrapper">
             <a href="/">
               <img className="logo" src={logo} alt="Coralyze" />
@@ -108,6 +110,8 @@ function Navbar() {
               </li>
             </ul>
           </div>
+          </div>
+          <div className="navbar__container__blur">
         </div>
       </IconContext.Provider>
     </>

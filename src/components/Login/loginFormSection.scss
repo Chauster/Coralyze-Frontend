@@ -5,7 +5,7 @@
   padding: 5%;
   width: auto;
   height: 90vh;
-  
+  background-color: var(--ltbackground);
 
   .form {
     @media (min-width: 64em) {
@@ -35,6 +35,8 @@
         width: 360px;
         border-bottom: 2px solid #808080;
         margin-bottom: 2rem;
+
+
     }
 
     &__right {
@@ -57,7 +59,6 @@
             margin-bottom: 0.5rem;
         }
     }
-
     @media (max-width:1023px) { // IPad
         .form {
             &__left {
@@ -140,4 +141,12 @@
         grid-template-areas: "left right";
     }
   }
+}
+
+.form__input:required {
+    border-bottom: 2px solid rgb(89, 211, 105);
+}
+
+.form__input:required:invalid {
+    border-bottom: 2px solid rgb(212, 52, 52);
 }
