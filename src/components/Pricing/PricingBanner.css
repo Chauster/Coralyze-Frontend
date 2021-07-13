@@ -12,6 +12,7 @@
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 2rem;
+  color: var(--primary-1);
 }
 
 .banner__text p {
@@ -41,19 +42,19 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  
+
   .banner h1 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .banner p {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .banner__button {
     display: flex;
     justify-content: center;
@@ -74,13 +75,13 @@
     justify-content: center;
     align-items: center;
   }
-  
+
   .banner p {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .banner__button {
     display: flex;
     justify-content: center;

@@ -18,10 +18,9 @@
 }
 
 .pricing__container-card::before {
-  content:"";
+  content: '';
   position: relative;
-  background-image: url("../../images/people.svg");
-
+  background-image: url('../../images/people.svg');
 }
 
 .pricing__container-card:nth-child(2) {
@@ -47,6 +46,10 @@
   flex-direction: column;
   align-items: start;
   margin: 0 auto;
+}
+
+.pricing__wrapper h1 {
+  color: #6a707e;
 }
 
 .pricing__heading {
