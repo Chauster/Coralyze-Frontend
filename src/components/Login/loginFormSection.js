@@ -41,6 +41,10 @@ function LoginFormSection() {
         console.log(res.data.password); // current user input
         console.log(res.password); // undefined
         console.log(password); // current user input
+      })
+      .catch((err) => {
+        console.log("User doesn't exist");
+        console.log('Error: ' + err);
       });
 
     // set fields to empty after submit
