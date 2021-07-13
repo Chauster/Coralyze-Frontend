@@ -43,7 +43,8 @@ function LoginFormSection() {
         console.log(password); // current user input
       })
       .catch((err) => {
-        console.log("User doesn't exist");
+        alert(`User doesn't exist!`);
+        // console.log("User doesn't exist");
         console.log('Error: ' + err);
       });
 
