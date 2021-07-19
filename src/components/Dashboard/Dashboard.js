@@ -254,10 +254,10 @@ const Dashboard = () => {
 
               <div className="container">
               <div class="dashboard__graph__four__subheading">
-                <p>Detections per gender group</p>
+                <p>Tinker Edge R - Device 1</p>
               </div>
               <div class="dashboard__graph__four__heading">
-                <p>Gender Demographic</p>
+                <p>System Performance</p>
               </div>
               <div className="dashboard__graph__four__grid">
               <ResponsiveContainer width="100%" height="30%" className="dashboard__graph__four__grid__left">

@@ -2,7 +2,7 @@ import React from "react";
 import "./DashboardNavbar.scss";
 import { Link } from 'react-router-dom';
 import { RiDashboardLine } from "react-icons/ri";
-import { BiDevices, BiSupport } from "react-icons/bi";
+import { BiDevices, BiSupport, BiLogOut } from "react-icons/bi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoSettingsOutline } from "react-icons/io5";
 import logo from "../../images/logo-2.png";
@@ -44,12 +44,12 @@ const DashboardNavbar = () => {
             <li>
                 <Link to="/support">
                     <BiSupport class="dashnavbar__links__icon"/>
-                    <span class="dashnavbar__links__label">Ticket Support</span>
+                    <span class="dashnavbar__links__label">Support</span>
                 </Link>
             </li>
             <li>
                 <Link to="/logout">
-                    <BiSupport class="dashnavbar__links__icon"/>
+                    <BiLogOut class="dashnavbar__links__icon"/>
                     <span class="dashnavbar__links__label">Logout</span>
                 </Link>
             </li>
