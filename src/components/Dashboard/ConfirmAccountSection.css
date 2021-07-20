@@ -1,20 +1,18 @@
 .main__section {
   /* the below settings ensure the page fits on the RHS of the sidebar */
-  left: 250px;
-  top: 0px;
   position: relative;
-  width: (100% - 250px);
+  top: 0px;
+  left: 250px;
+  height: 100vh;
+  width: calc(100% - 250px);
   color: #fff;
-  justify-content: center;
-  /* display: flex; */
-  padding: 5%;
-}
-
-.main__section h1 {
-  color: #3e74ff;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 2%;
 }
 
 .form {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   width: 85%;
@@ -23,6 +21,7 @@
 }
 
 .form h1 {
+  color: #3e74ff;
   font-size: 2rem;
   text-transform: uppercase;
   text-align: start;
@@ -50,7 +49,7 @@
 
 .form__input {
   display: block;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   outline: none;
   border-radius: 2px;
   height: 40px;
