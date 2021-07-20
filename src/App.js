@@ -1,19 +1,21 @@
-import Navbar from "./components/Navbar";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Documentation from "./pages/documentation";
-import Contact from "./pages/contact";
-import Pricing from "./pages/pricing";
-import Login from "./pages/login";
-import Register from "./pages/register";
-import Faqs from "./pages/faqs";
-import Dashboard from "./pages/dashboard";
-import Settings from "./pages/settings";
-import Support from "./pages/support";
-import ConfirmAcc from "./pages/confirmaccount";
-import PageNotFound from "./pages/pagenotfound";
-import "./App.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from './components/Navbar';
+import Home from './pages/home';
+import About from './pages/about';
+import Documentation from './pages/documentation';
+import Contact from './pages/contact';
+import Pricing from './pages/pricing';
+import Login from './pages/login';
+import Register from './pages/register';
+import Faqs from './pages/faqs';
+import Dashboard from './pages/dashboard';
+import Settings from './pages/settings';
+import Support from './pages/support';
+import ConfirmAcc from './pages/confirmaccount';
+import Devices from './pages/devices';
+import Stream from './pages/livestream';
+import PageNotFound from './pages/pagenotfound';
+import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 function App() {
   return (
     <Router>
@@ -33,6 +35,8 @@ function App() {
             <Route path="/confirmaccount" component={ConfirmAcc}></Route>
             <Route path="/settings" component={Settings}></Route>
             <Route path="/support" component={Support}></Route>
+            <Route path="/devices" component={Devices}></Route>
+            <Route path="/livestream" component={Stream}></Route>
             <Route path="*" component={PageNotFound}></Route>
           </Switch>
         </div>

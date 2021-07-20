@@ -1,0 +1,61 @@
+.main__container {
+  /* the below settings ensure the page fits on the RHS of the sidebar */
+  position: relative;
+  top: 0px;
+  left: 250px;
+  height: 100vh;
+  width: calc(100% - 250px);
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 2%;
+}
+
+.main__container h3 {
+  display: inline-block;
+  color: gray;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.element__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.element__item {
+  margin: 10px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: #000;
+  background-color: #f3f3f3;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  font-size: medium;
+  transition: all 0.5s ease;
+}
+
+.element__item :hover {
+  opacity: 0.6;
+}
+
+.element__item a {
+  text-decoration: none;
+}
+
+.device__icons {
+  height: 20px;
+  min-width: 40px;
+  color: #000;
+  opacity: 0.8;
+}
+
+.device__info {
+  display: flex;
+  color: #000;
+  justify-content: center;
+  font-size: small;
+}

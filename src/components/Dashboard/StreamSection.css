@@ -1,0 +1,28 @@
+.stream__container {
+  position: relative;
+  top: 0px;
+  left: 250px;
+  height: 100vh;
+  color: #000;
+  width: calc(100% - 250px);
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+}
+
+.stream__container h3 {
+  display: inline-block;
+  color: gray;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.video__stream {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+
+.video__stream img {
+  width: 100% !important;
+  height: auto !important;
+}
