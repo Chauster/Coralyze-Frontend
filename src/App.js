@@ -9,6 +9,7 @@ import Register from "./pages/register";
 import Faqs from "./pages/faqs";
 import Dashboard from "./pages/dashboard";
 import Settings from "./pages/settings";
+import Support from "./pages/support";
 import ConfirmAcc from "./pages/confirmaccount";
 import PageNotFound from "./pages/pagenotfound";
 import "./App.css";
@@ -31,6 +32,7 @@ function App() {
             <Route path="/dashboard" component={Dashboard}></Route>
             <Route path="/confirmaccount" component={ConfirmAcc}></Route>
             <Route path="/settings" component={Settings}></Route>
+            <Route path="/support" component={Support}></Route>
             <Route path="*" component={PageNotFound}></Route>
           </Switch>
         </div>

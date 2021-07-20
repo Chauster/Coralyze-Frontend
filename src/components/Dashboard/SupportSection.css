@@ -1,0 +1,59 @@
+.main_section {
+  /* the below settings ensure the page fits on the RHS of the sidebar */
+  left: 250px;
+  top: 0px;
+  position: relative;
+  width: (100% - 250px);
+  color: #fff;
+  justify-content: center;
+  /* display: flex; */
+  padding: 5%;
+}
+
+.main_section h1 {
+  color: #3e74ff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+}
+
+.form h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: start;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.form_inputs {
+  margin-bottom: 0.5rem;
+  width: 80%;
+  padding: 2px;
+}
+
+.form_inputs p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.form_label {
+  color: #000;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+}
+
+.form_input {
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
