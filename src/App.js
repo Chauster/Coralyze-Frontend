@@ -10,6 +10,7 @@ import Faqs from './pages/faqs';
 import Dashboard from './pages/dashboard';
 import Settings from './pages/settings';
 import Support from './pages/support';
+import Notifications from './pages/notifications';
 import ConfirmAcc from './pages/confirmaccount';
 import Devices from './pages/devices';
 import Stream from './pages/livestream';
@@ -35,6 +36,7 @@ function App() {
             <Route path="/confirmaccount" component={ConfirmAcc}></Route>
             <Route path="/settings" component={Settings}></Route>
             <Route path="/support" component={Support}></Route>
+            <Route path="/notifications" component={Notifications}></Route>
             <Route path="/devices" component={Devices}></Route>
             <Route path="/livestream" component={Stream}></Route>
             <Route path="*" component={PageNotFound}></Route>
