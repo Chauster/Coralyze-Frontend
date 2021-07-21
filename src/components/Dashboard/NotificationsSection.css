@@ -8,39 +8,63 @@
   padding-left: 1%;
   padding-right: 1%;
   padding-top: 2%;
+  overflow-y: hidden;
 }
 
-.main_section h1 {
-  color: #3e74ff;
-  font-size: 2rem;
+.main_section h3 {
+  color: #237c9a;
+  display: inline-block;
+  margin: 10px;
   text-transform: uppercase;
 }
 
 .notif_box {
-  outline: 2px;
-  outline-style: solid;
-  outline-color: #3e74ff;
-  height: 300px;
-  width: 90%;
+  margin: 10px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: start;
+  height: 30%;
   overflow-y: auto;
   overflow-x: hidden;
   list-style: none;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
 }
 
 .notif {
-  width: 100%;
-  outline: 2px;
-  margin-left: 5px;
-  outline-style: solid;
-  outline-color: #3e74ff;
+  margin: 5px;
+  position: relative;
+  background-color: #fafafa;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  width: auto;
+  transition: all 0.5s ease;
 }
 
-.notif h3 {
-  color: #3e74ff;
+.notif :hover {
+  color: #ff6543;
+  transition: all 0.3s ease;
 }
 
-.notif p {
-  color: #000000;
+.notif a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+span {
+  padding: 5px;
+}
+
+.subject {
+  color: #237c9a;
+  font-size: large;
+  font-weight: bold;
+}
+
+.description {
+  color: #000;
+  font-size: small;
 }

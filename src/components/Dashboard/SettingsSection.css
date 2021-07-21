@@ -11,26 +11,24 @@
   padding-top: 2%;
 }
 
+.main__section h3 {
+  display: inline-block;
+  color: #237c9a;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
 .form {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-.form h1 {
-  color: #3e74ff;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-align: start;
-  width: 80%;
-  margin-bottom: 1rem;
-}
-
 .form__inputs {
   margin-bottom: 0.5rem;
-  width: 80%;
+  width: 90%;
   padding: 2px;
 }
 
@@ -47,6 +45,7 @@
 }
 
 .form__input {
+  background: #fafafa;
   display: block;
   padding-left: 10px;
   outline: none;

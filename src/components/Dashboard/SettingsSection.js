@@ -1,17 +1,17 @@
-import axios from "axios";
-import React, { useState } from "react";
-import { Button } from "../Button";
-import "./SettingsSection.css";
+import axios from 'axios';
+import React, { useState } from 'react';
+import { Button } from '../Button';
+import './SettingsSection.css';
 
 function SettingsSection() {
-  const [_id, setID] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [familyName, setFamilyName] = useState("");
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [_id, setID] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [familyName, setFamilyName] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   // const [confirmPassword, setConfirmPassword] = useState('');
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
 
   // componentDidMount
 
@@ -65,15 +65,15 @@ function SettingsSection() {
     console.log(user);
 
     axios
-      .post("http://localhost:5000/users/add", user)
+      .post('http://localhost:5000/users/add', user)
       .then((res) => console.log(res.data));
   };
 
   return (
     <>
       <div className="main__section">
+        <h3>Update Account Details</h3>
         <form autoComplete="off" className="form" onSubmit={handleSubmit}>
-          <h1 class="form__title">Change Account Details</h1>
           <div className="form__inputs">
             <div class="form__subtitle">
               <label htmlFor="fname" className="form__label">

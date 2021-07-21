@@ -45,8 +45,8 @@ function ConfirmAccountSection() {
 
   return (
     <div className="main__section">
+      <h3 class="form__title">Confirm Account Details</h3>
       <form autoComplete="off" className="form" onSubmit={handleSubmit}>
-        <h1 class="form__title">Confirm Account Details</h1>
         <div className="form__inputs">
           <div class="form__subtitle">
             <label htmlFor="username" className="form__label">
