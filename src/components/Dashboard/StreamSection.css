@@ -34,9 +34,6 @@
 .video__stream {
   border: 1px solid lightgray;
   border-radius: 8px;
-}
-
-.video__stream img {
   max-width: 100% !important;
   height: auto !important;
 }

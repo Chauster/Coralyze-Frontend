@@ -1,6 +1,6 @@
 import React from 'react';
 import './StreamSection.css';
-import stream from '../../images/stream-test.gif';
+import stream from '../../videos/video1.mp4';
 
 function StreamSection() {
   return (
@@ -8,9 +8,10 @@ function StreamSection() {
       <div className="stream__container">
         <h3>Video Stream</h3>
         please wait...
-        <div className="video__stream">
-          <img src={stream} alt="test-stream" />
-        </div>
+        <video className="video__stream" controls autoPlay>
+          <source src={stream} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </>
   );

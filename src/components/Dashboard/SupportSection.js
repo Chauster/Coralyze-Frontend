@@ -32,7 +32,11 @@ function SupportSection() {
     <div className="main_section">
       <h3 className="form_title">Existing Tickets</h3>
       <ul className="ticket_box">
-        <li className="ticket_item">Ticket #1</li>
+        <li className="ticket_item">Ticket #1 - Device constantly reboots.</li>
+        <li className="ticket_item">
+          Ticket #2 - Device stream crashing, displays error.
+        </li>
+        <li className="ticket_item">Ticket #3 - Objects not detected.</li>
       </ul>
       <h3 className="form_title">Create Ticket</h3>
       <form autoComplete="off" className="form" onSubmit={handleSubmit}>
@@ -44,7 +48,7 @@ function SupportSection() {
           </div>
           <input
             required
-            minLength="2"
+            minLength="3"
             id="subject"
             type="text"
             name="subject"
@@ -62,7 +66,7 @@ function SupportSection() {
           </div>
           <textarea
             required
-            minLength="50"
+            minLength="10"
             maxLength="200"
             id="description"
             type="text"

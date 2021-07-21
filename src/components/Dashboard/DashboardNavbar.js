@@ -48,7 +48,8 @@ const DashboardNavbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/logout">
+            <Link to="/">
+              {/* to be changed to logout page or response */}
               <BiLogOut class="dashnavbar__links__icon" />
               <span class="dashnavbar__links__label">Logout</span>
             </Link>
