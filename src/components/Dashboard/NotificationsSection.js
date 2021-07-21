@@ -7,6 +7,8 @@ function NotificationsSection() {
     return (
       <li className="notif">
         <Link to="/support">
+          Updates
+          <br />
           <span className="subject">{props.subject}</span>
           <br />
           <span className="description">{props.description}</span>
