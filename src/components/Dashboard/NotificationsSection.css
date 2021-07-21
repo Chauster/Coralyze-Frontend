@@ -25,7 +25,6 @@
   border-radius: 8px;
   padding: 5px;
   text-align: start;
-  /* height: 30%; */
   overflow-y: scroll;
   list-style: none;
   display: flex;
@@ -43,8 +42,9 @@
   transition: all 0.5s ease;
 }
 
-.notif :hover {
+.notif:hover {
   color: #ff6543;
+  background: #eff0f2;
   transition: all 0.3s ease;
 }
 
@@ -57,6 +57,11 @@
   color: #237c9a;
   font-size: large;
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.subject:hover {
+  color: #ff6543;
 }
 
 .description {
