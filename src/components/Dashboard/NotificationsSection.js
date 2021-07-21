@@ -49,6 +49,18 @@ function NotificationsSection() {
           subject="Issue Detected"
           description="An issue regarding your device or account has occurred."
         ></Notification>
+        <Notification
+          subject="Issue Detected"
+          description="An issue regarding your device or account has occurred."
+        ></Notification>
+        <Notification
+          subject="Issue Detected"
+          description="An issue regarding your device or account has occurred."
+        ></Notification>
+        <Notification
+          subject="Issue Detected"
+          description="An issue regarding your device or account has occurred."
+        ></Notification>
       </ul>
     </div>
   );
