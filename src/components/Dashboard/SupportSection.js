@@ -47,17 +47,17 @@ function SupportSection() {
   //   );
   // };
 
-  axios
-    .get('http://localhost:5000/tickets')
-    .then((res) => {
-      console.log(res.data);
-      console.log(res.data.subject);
-      console.log(res.data.description);
-    })
-    .catch((err) => {
-      console.log('No tickets to display!');
-      console.log('Error: ' + err);
-    });
+  // axios
+  //   .get('http://localhost:5000/tickets')
+  //   .then((res) => {
+  //     console.log(res.data);
+  //     console.log(res.data.subject);
+  //     console.log(res.data.description);
+  //   })
+  //   .catch((err) => {
+  //     console.log('No tickets to display!');
+  //     console.log('Error: ' + err);
+  //   });
 
   return (
     <div className="main_section">
