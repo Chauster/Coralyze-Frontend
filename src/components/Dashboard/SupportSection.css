@@ -31,6 +31,39 @@
   }
 }
 
+.ticket_box {
+  max-height: 80%;
+  overflow-y: scroll;
+  margin: 10px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: start;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket_item {
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  color: #237c9a;
+  background-color: #fafafa;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  width: auto;
+  transition: all 0.5s ease;
+}
+
+.ticket_item:hover {
+  color: #ff6543;
+  background: #eff0f2;
+  transition: all 0.3s ease;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -58,14 +91,17 @@
 }
 
 .form_input {
-  background: #fafafa;
+  position: relative;
+  background: #fff;
   display: block;
   padding-left: 10px;
-  outline: none;
-  border-radius: 2px;
+  /* outline: none;
+  border-radius: 2px; */
+  border: 1px solid lightgray;
+  border-radius: 8px;
   height: 40px;
   width: 100%;
-  border: none;
+  /* border: none; */
 }
 
 .form_inputs textarea {

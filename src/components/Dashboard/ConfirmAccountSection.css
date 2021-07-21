@@ -59,14 +59,17 @@
 }
 
 .form__input {
-  background: #fafafa;
+  position: relative;
+  background: #fff;
   display: block;
-  /* padding-left: 10px; */
-  outline: none;
-  border-radius: 2px;
+  padding-left: 10px;
+  /* outline: none;
+  border-radius: 2px; */
+  border: 1px solid lightgray;
+  border-radius: 8px;
   height: 40px;
   width: 100%;
-  border: none;
+  /* border: none; */
 }
 
 .form__input::placeholder {

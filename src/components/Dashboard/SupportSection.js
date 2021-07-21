@@ -30,10 +30,11 @@ function SupportSection() {
 
   return (
     <div className="main_section">
-      <div className="ticket_container">
-        Ticket list box to be added above...
-      </div>
-      <h3 class="form_title">Create Ticket</h3>
+      <h3 className="form_title">Existing Tickets</h3>
+      <ul className="ticket_box">
+        <li className="ticket_item">Ticket #1</li>
+      </ul>
+      <h3 className="form_title">Create Ticket</h3>
       <form autoComplete="off" className="form" onSubmit={handleSubmit}>
         <div className="form_inputs">
           <div class="form_subtitle">
