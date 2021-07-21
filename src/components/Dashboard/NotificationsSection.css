@@ -1,6 +1,6 @@
 .main_section {
   /* the below settings ensure the page fits on the RHS of the sidebar */
-  position: fixed;
+  position: relative;
   top: 0px;
   left: 250px;
   height: auto;
@@ -25,7 +25,7 @@
   border-radius: 8px;
   padding: 5px;
   text-align: start;
-  height: 30%;
+  /* height: 30%; */
   overflow-y: scroll;
   list-style: none;
   display: flex;
