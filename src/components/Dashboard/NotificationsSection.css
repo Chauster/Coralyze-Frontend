@@ -1,14 +1,13 @@
 .main_section {
   /* the below settings ensure the page fits on the RHS of the sidebar */
-  position: relative;
+  position: fixed;
   top: 0px;
   left: 250px;
-  height: 100vh;
+  height: auto;
   width: calc(100% - 250px);
   padding-left: 1%;
   padding-right: 1%;
   padding-top: 2%;
-  overflow-y: hidden;
 }
 
 .main_section h3 {
@@ -27,8 +26,7 @@
   padding: 5px;
   text-align: start;
   height: 30%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow-y: scroll;
   list-style: none;
   display: flex;
   flex-direction: column;

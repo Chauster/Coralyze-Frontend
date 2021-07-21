@@ -3,7 +3,7 @@
   position: relative;
   top: 0px;
   left: 250px;
-  height: 100vh;
+  height: auto;
   width: calc(100% - 250px);
   padding-left: 1%;
   padding-right: 1%;
@@ -19,26 +19,28 @@
 
 .element__list {
   list-style: none;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
 }
 
 .element__item {
   margin: 10px;
+  padding: 10px;
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
   color: #237c9a;
   background-color: #fafafa;
   border: 1px solid lightgray;
   border-radius: 8px;
-  padding: 5px;
   text-align: center;
   font-size: medium;
+  transition: all 0.5s ease;
 }
 
 .element__item :hover {
   color: #ff6543;
+  transition: all 0.3s ease;
 }
 
 .element__item a {
@@ -55,6 +57,7 @@
 }
 
 .device__info {
+  padding: 5px;
   display: flex;
   color: #000;
   justify-content: center;

@@ -48,6 +48,45 @@ function DeviceSection() {
               </span>
             </Link>
           </li>
+          <li className="element__item">
+            <Link to="/livestream">
+              <div className="device__icons">
+                <FiCpu />
+              </div>
+              Device #4
+              <span className="device__info">
+                IP: 10.0.0.4
+                <br />
+                Signal: 15 dBm
+              </span>
+            </Link>
+          </li>
+          <li className="element__item">
+            <Link to="/livestream">
+              <div className="device__icons">
+                <FiCpu />
+              </div>
+              Device #5
+              <span className="device__info">
+                IP: 10.0.0.5
+                <br />
+                Signal: 5 dBm
+              </span>
+            </Link>
+          </li>
+          <li className="element__item">
+            <Link to="/livestream">
+              <div className="device__icons">
+                <FiCpu />
+              </div>
+              Device #6
+              <span className="device__info">
+                IP: 10.0.0.6
+                <br />
+                Signal: -15 dBm
+              </span>
+            </Link>
+          </li>
         </ul>
       </div>
     </>

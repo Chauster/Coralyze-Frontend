@@ -3,7 +3,7 @@
   position: relative;
   top: 0px;
   left: 250px;
-  height: 100vh;
+  height: auto;
   width: calc(100% - 250px);
   color: var(--black);
   padding-left: 1%;
