@@ -20,31 +20,31 @@ function NotificationsSection() {
       <h3>Notifications</h3>
       <ul className="notif_box">
         <Notification
-          subject="Account Issue"
+          subject="Issue Detected"
           description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
-          subject="Account Issue"
+          subject="Issue Detected"
           description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
-          subject="Account Issue"
+          subject="Issue Detected"
           description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
-          subject="Account Issue"
+          subject="Issue Detected"
           description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
-          subject="Account Issue"
+          subject="Issue Detected"
           description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
-          subject="Account Issue"
+          subject="Issue Detected"
           description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
-          subject="Account Issue"
+          subject="Issue Detected"
           description="An issue regarding your device or account has occurred."
         ></Notification>
       </ul>
