@@ -2,12 +2,13 @@
   position: relative;
   top: 0px;
   left: 250px;
-  height: 100vh;
+  height: auto;
+  overflow-y: hidden;
   color: #000;
   width: calc(100% - 250px);
   padding-left: 1%;
   padding-right: 1%;
-  padding-top: 1%;
+  padding-top: 2%;
 }
 
 .stream__container h3 {
@@ -17,12 +18,25 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 960px) {
+  .stream__container {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2%;
+  }
+}
+
 .video__stream {
   border: 1px solid lightgray;
   border-radius: 8px;
 }
 
 .video__stream img {
-  width: 100% !important;
+  max-width: 100% !important;
   height: auto !important;
 }

@@ -16,7 +16,7 @@
   position: sticky;
   filter:blur(15px);
 }  */
- /* .navbar__container__blur {
+/* .navbar__container__blur {
   background-color: rgba(0,0,0,0);
   height: 80px;
   display: flex;
@@ -37,6 +37,7 @@
 
 .wrapper {
   z-index: 1;
+  /* height: auto; */
   width: 100%;
   max-width: 1900px;
   margin-right: auto;
@@ -90,7 +91,7 @@
 .btn__link {
   background-color: #3e74ff;
 }
-.btn__link button{
+.btn__link button {
   background-color: #3e74ff;
 }
 @media screen and (max-width: 960px) {
@@ -111,6 +112,7 @@
   }
 
   .nav__menu.active {
+    /* height: 100%; */
     background: #f3f3f3;
     left: 0;
     opacity: 1;
@@ -169,7 +171,7 @@
     width: 100%;
     height: 120px;
   }
-  .nav__btn button{
+  .nav__btn button {
     width: 120px;
     height: 60px;
   }
