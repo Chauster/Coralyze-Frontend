@@ -1,37 +1,70 @@
 import React, { useState } from 'react';
 import { Button } from '../Button';
+import axios from 'axios';
 import './SupportSection.css';
 
 function SupportSection() {
+  const [_id, setID] = useState('');
   const [subject, setSubject] = useState('');
   const [description, setDescription] = useState('');
 
+  let handleIDChange = (event) => {
+    setID(event.target.value);
+  };
+
   let handleSubjectChange = (event) => {
-    //Handle subject changing
     setSubject(event.target.value);
   };
 
   let handleDescriptionChange = (event) => {
-    //Handle description chaning
     setDescription(event.target.value);
   };
 
   let handleSubmit = (event) => {
-    //Submit ticket to coralyze email implemented later
     event.preventDefault();
 
     const ticket = {
+      _id: subject,
       subject: subject,
       description: description,
     };
 
-    console.log(ticket);
+    // console.log(ticket);
+
+    axios
+      .post('http://localhost:5000/tickets/add', ticket)
+      .then((res) => console.log(res.data));
   };
+
+  // const Ticket = (props) => {
+  //   return (
+  //     <ul className="ticket_box">
+  //       <li className="ticket_item">
+  //         {props.subject}
+  //         {props.description}
+  //       </li>
+  //     </ul>
+  //   );
+  // };
+
+  axios
+    .get('http://localhost:5000/tickets')
+    .then((res) => {
+      console.log(res.data);
+      console.log(res.data.subject);
+      console.log(res.data.description);
+    })
+    .catch((err) => {
+      console.log('No tickets to display!');
+      console.log('Error: ' + err);
+    });
 
   return (
     <div className="main_section">
       <h3 className="form_title">Existing Tickets</h3>
       <ul className="ticket_box">
+        {/* test item from backend */}
+        {/* <Ticket></Ticket> */}
         <li className="ticket_item">Ticket #1 - Device constantly reboots.</li>
         <li className="ticket_item">
           Ticket #2 - Device stream crashing, displays error.
@@ -55,7 +88,7 @@ function SupportSection() {
             className="form_input"
             placeholder="Enter the subject of the ticket"
             value={subject}
-            onChange={handleSubjectChange}
+            onChange={(handleIDChange, handleSubjectChange)}
           />
         </div>
         <div className="form_inputs">

@@ -32,7 +32,7 @@ router.route('/:id').get((req, res) => {
 
 router.route('/:id').delete((req, res) => {
   Ticket.findByIdAndDelete(req.params.id)
-    .then(() => res.json('User deleted.'))
+    .then(() => res.json('Ticket deleted.'))
     .catch((err) => res.status(400).json('Error: ' + err));
 });
 
@@ -45,7 +45,7 @@ router.route('/update/:id').post((req, res) => {
 
       ticket
         .save()
-        .then(() => res.json('User updated!'))
+        .then(() => res.json('Ticket updated!'))
         .catch((err) => res.status(400).json('Error: ' + err));
     })
     .catch((err) => res.status(400).json('Error: ' + err));

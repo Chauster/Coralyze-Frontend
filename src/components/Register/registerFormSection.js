@@ -75,20 +75,8 @@ function RegisterFormSection() {
       .post('http://localhost:5000/users/add', user)
       .then((res) => console.log(res.data));
 
-    // checkUserExists(user);
-
     // set state of form fields to empty after submit
   };
-
-  // let checkUserExists = (user) => {
-  //   axios.get(`http://localhost:5000/users/${username}`).then((res) => {
-  //     console.log(res.data); // object from cloud
-  //   })
-  //     ? console.log('username already exists')
-  //     : axios
-  //         .post('http://localhost:5000/users/add', user)
-  //         .then((res) => console.log(res.data));
-  // };
 
   return (
     <>
