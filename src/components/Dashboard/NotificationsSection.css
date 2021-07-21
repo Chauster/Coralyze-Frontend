@@ -36,6 +36,7 @@
 
 .notif {
   margin: 5px;
+  padding: 5px;
   position: relative;
   background-color: #fafafa;
   border: 1px solid lightgray;
@@ -54,14 +55,10 @@
   transition: all 0.3s ease;
 }
 
-span {
-  padding: 5px;
-}
-
 .subject {
   color: #237c9a;
   font-size: large;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .description {

@@ -7,9 +7,9 @@ function NotificationsSection() {
     return (
       <li className="notif">
         <Link to="/support">
-          <span class="subject">{props.subject}</span>
+          <span className="subject">{props.subject}</span>
           <br />
-          <span class="description">{props.description}</span>
+          <span className="description">{props.description}</span>
         </Link>
       </li>
     );
@@ -21,31 +21,31 @@ function NotificationsSection() {
       <ul className="notif_box">
         <Notification
           subject="Account Issue"
-          description="Some issue occured."
+          description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
           subject="Account Issue"
-          description="Some issue occured."
+          description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
           subject="Account Issue"
-          description="Some issue occured."
+          description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
           subject="Account Issue"
-          description="Some issue occured."
+          description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
           subject="Account Issue"
-          description="Some issue occured."
+          description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
           subject="Account Issue"
-          description="Some issue occured."
+          description="An issue regarding your device or account has occurred."
         ></Notification>
         <Notification
           subject="Account Issue"
-          description="Some issue occured."
+          description="An issue regarding your device or account has occurred."
         ></Notification>
       </ul>
     </div>
