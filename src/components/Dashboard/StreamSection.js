@@ -8,6 +8,7 @@ function StreamSection() {
       <div className="stream__container">
         <h3>Video Stream</h3>
         please wait...
+        <br />
         <video className="video__stream" controls autoPlay>
           <source src={stream} type="video/mp4" />
           Your browser does not support the video tag.
