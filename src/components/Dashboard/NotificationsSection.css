@@ -3,7 +3,7 @@
   position: relative;
   top: 0px;
   left: 250px;
-  height: 600px;
+  height: auto;
   overflow-y: hidden;
   width: calc(100% - 250px);
   padding-left: 1%;
@@ -23,7 +23,7 @@
     position: relative;
     top: 0;
     left: 0;
-    height: 600px;
+    height: auto;
     width: 100%;
     padding-left: 1%;
     padding-right: 1%;
@@ -32,8 +32,8 @@
 }
 
 .notif_box {
-  max-height: 80%;
-  overflow-y: scroll;
+  /* max-height: 80%; */
+  /* overflow-y: scroll; */
   margin: 10px;
   position: relative;
   background-color: #fff;

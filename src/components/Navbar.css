@@ -30,12 +30,14 @@
 }  */
 
 .navbar__wrapper {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   height: 80px;
 }
 
 .wrapper {
+  position: fixed;
   z-index: 1;
   /* height: auto; */
   width: 100%;
