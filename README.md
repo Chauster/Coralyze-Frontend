@@ -1,3 +1,15 @@
+# Execution Instructions to run the frontend / backend
+## Frontend:
+1. Open up your OS terminal
+2. Change directory to the Coralyze-Frontend folder
+3. Type in 'npm start'
+4. This should start up the frontend website.
+## Backend:
+1. Open up your OS terminal
+2. Change directory to the Coralyze-Frontend folder
+3. Type in 'nodemon server'
+4. This should start up the backend server that is required for all login functionalities.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
