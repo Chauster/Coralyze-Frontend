@@ -1,3 +1,10 @@
+# First time installation / Updating packages
+## Instructions:
+1. Open up your OS terminal
+2. Using your terminal, change the directory to the Coralyze-Frontend folder
+3. Type in 'npm install'
+4. This should install all the required dependencies/packages that is needed to run this application.
+
 # Execution Instructions to run the Frontend / Backend
 ## Frontend:
 1. Open up your OS terminal
