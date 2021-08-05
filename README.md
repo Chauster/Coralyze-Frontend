@@ -1,4 +1,4 @@
-# Execution Instructions to run the frontend / backend
+# Execution Instructions to run the Frontend / Backend
 ## Frontend:
 1. Open up your OS terminal
 2. Using your terminal, change the directory to the Coralyze-Frontend folder
