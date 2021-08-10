@@ -199,7 +199,7 @@ const Dashboard = () => {
               <div class="dashboard__graph__two__heading">
                 <p>Age Demographic</p>
               </div>
-              <ResponsiveContainer width="100%" height="30%">
+              <ResponsiveContainer width={'100%'} height={285}>
                 <LineChart
                 width = {500}
                 height = {400}
@@ -229,7 +229,7 @@ const Dashboard = () => {
               <div class="dashboard__graph__three__heading">
                 <p>Gender Demographic</p>
               </div>
-              <ResponsiveContainer width="100%" height="30%">
+              <ResponsiveContainer width={'100%'} height={285}>
                 <BarChart
                 width = {500}
                 height = {400}
@@ -260,7 +260,7 @@ const Dashboard = () => {
                 <p>System Performance</p>
               </div>
               <div className="dashboard__graph__four__grid">
-              <ResponsiveContainer width="100%" height="30%" className="dashboard__graph__four__grid__left">
+              <ResponsiveContainer width={'100%'} height={285} className="dashboard__graph__four__grid__left">
                 <PieChart width={400} height={400}>
                   <Pie
                     data={data}
@@ -281,28 +281,28 @@ const Dashboard = () => {
               <div class="dashboard__graph__four__grid__right">
                 <p>Usage</p>
                 <div class="dashboard__graph__four__performance__usage__CPU">
-                  <div className="flex">
+                  <div className="dashboard__graph__four__grid__right__flex">
                     <div class= "square__one"></div>
                     <p>CPU</p>
                     <p>33% 1.5GHz</p>
                   </div>
                 </div>
                 <div class="dashboard__graph__four__performance__usage__GPU">
-                <div className="flex">
+                <div className="dashboard__graph__four__grid__right__flex">
                     <div class= "square__two"></div>
                     <p>GPU</p>
                     <p>25% 40 C</p>
                   </div>
                 </div>
                 <div class="dashboard__graph__four__performance__usage__RAM">
-                <div className="flex">
+                <div className="dashboard__graph__four__grid__right__flex">
                     <div class= "square__three"></div>
                     <p>RAM</p>
                     <p>25% 0.5/1GB</p>
                   </div>
                 </div>
                 <div class="dashboard__graph__four__performance__usage__HDD">
-                <div className="flex">
+                <div className="dashboard__graph__four__grid__right__flex">
                     <div class= "square__four"></div>
                     <p>HDD</p>
                     <p>17% 400MB/s</p>
