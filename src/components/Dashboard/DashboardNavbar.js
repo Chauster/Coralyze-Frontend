@@ -36,7 +36,7 @@ const DashboardNavbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/confirmaccount">
+            <Link to="/settings">
               <IoSettingsOutline class="dashnavbar__links__icon" />
               <span class="dashnavbar__links__label">Settings</span>
             </Link>

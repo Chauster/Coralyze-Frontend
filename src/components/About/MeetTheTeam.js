@@ -1,12 +1,12 @@
-import React from "react";
-import "./MeetTheTeam.scss";
-import member1 from "../../images/portraits/saamir.jpg";
-import member2 from "../../images/portraits/long.jpg";
-import member3 from "../../images/portraits/kishen.png";
-import member4 from "../../images/portraits/david.jpg";
-import member5 from "../../images/portraits/baolam.jpg";
-import member6 from "../../images/portraits/cynan.jpg";
-import member7 from "../../images/portraits/armaghan.jpg";
+import React from 'react';
+import './MeetTheTeam.scss';
+import member1 from '../../images/portraits/sam.jpg';
+import member2 from '../../images/portraits/longle.png';
+import member3 from '../../images/portraits/big_kush.jpg';
+import member4 from '../../images/portraits/david.jpg';
+import member5 from '../../images/portraits/baolam.jpg';
+import member6 from '../../images/portraits/cynan.jpg';
+import member7 from '../../images/portraits/army.jpg';
 const test = () => {
   return (
     <div>
@@ -24,7 +24,11 @@ const test = () => {
                 <img src={member1}></img>
               </div>
               <div class="card__title">Saamir Hye</div>
-              <div class="card__roletitle">Project Manager<br/>Developer</div>
+              <div class="card__roletitle">
+                Project Manager
+                <br />
+                Developer
+              </div>
               <div class="card__description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
                 cumque est necessitatibus debitis neque eveniet sequi quas
@@ -130,7 +134,6 @@ const test = () => {
           </div>
         </div>
       </section>
-      
     </div>
   );
 };

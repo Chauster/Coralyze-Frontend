@@ -54,6 +54,16 @@ function RegisterFormSection() {
     setPhone(event.target.value);
   };
 
+  const clearState = () => {
+    setID('');
+    setFirstName('');
+    setFamilyName('');
+    setUsername('');
+    setPassword('');
+    setEmail('');
+    setPhone('');
+  };
+
   let handleSubmit = (event) => {
     event.preventDefault();
 
@@ -71,9 +81,10 @@ function RegisterFormSection() {
     // for testing purposes
     console.log(user);
 
-    axios
-      .post('http://localhost:5000/users/add', user)
-      .then((res) => console.log(res.data));
+    axios.post('http://localhost:5000/users/add', user).then((res) => {
+      console.log(res.data);
+      clearState();
+    });
 
     // set state of form fields to empty after submit
   };

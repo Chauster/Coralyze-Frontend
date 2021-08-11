@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
-import { Button } from "../Button";
-import { IoPersonCircle } from "react-icons/io5";
-import { RiLockPasswordLine } from "react-icons/ri";
-import rightimage from "../../images/loginrightimage.svg";
+import React, { useState } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
+import { Button } from '../Button';
+import { IoPersonCircle } from 'react-icons/io5';
+import { RiLockPasswordLine } from 'react-icons/ri';
+import rightimage from '../../images/loginrightimage.svg';
 // import './loginFormSection.css'; REPLACED BY SCSS
-import "./loginFormSection.scss";
+import './loginFormSection.scss';
 
 function LoginFormSection() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
   let handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -35,7 +35,7 @@ function LoginFormSection() {
       .get(`http://localhost:5000/users/authenticate/${username}`)
       .then((res) => {
         res.data.password === user.password
-          ? (window.location = "/dashboard")
+          ? (window.location = '/dashboard')
           : alert(`Incorrect Username or Password`);
         console.log(res.data); // object from cloud
         console.log(res.data.password); // current user input
@@ -45,7 +45,7 @@ function LoginFormSection() {
       .catch((err) => {
         alert(`User doesn't exist!`);
         // console.log("User doesn't exist");
-        console.log("Error: " + err);
+        console.log('Error: ' + err);
       });
 
     // set fields to empty after submit
@@ -116,7 +116,7 @@ function LoginFormSection() {
                 </Button>
               </Link>
             </div>
-          </div>{" "}
+          </div>{' '}
           {/*  end of left section */}
           <div class="form__right">
             <img src={rightimage}></img>

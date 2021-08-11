@@ -65,6 +65,10 @@
     bottom: 0;
     justify-content: center;
 
+    li a {
+      transition: none;
+    }
+
     &__links {
       display: flex;
       flex-direction: row;
@@ -86,20 +90,3 @@
     }
   }
 }
-/* Below is placeholder for now, to be removed later, this is to primarily test the dashnavbar and content widths */
-// .dashboard {
-//   position: relative;
-//   top: 0px;
-//   left: 250px;
-//   background: var(--white);
-//   height: 100vh;
-//   width: calc(100% - 250px);
-
-//   &__title {
-//     display: inline-block;
-//     color: #3e74ff;
-//     margin: 27px;
-//   }
-//   &__graph {
-//   }
-// }

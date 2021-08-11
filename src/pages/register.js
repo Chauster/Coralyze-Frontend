@@ -6,7 +6,8 @@ const register = () => {
   return (
     <>
       <RegisterFormSection></RegisterFormSection>
-      <Footer></Footer>
+      {/* for testing purposes - footer may be removed later */}
+      {/* <Footer></Footer> */}
     </>
   );
 };

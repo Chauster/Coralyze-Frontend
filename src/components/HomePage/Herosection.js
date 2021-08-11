@@ -41,7 +41,6 @@ const Herosection = () => {
       .from(heroParagraph, 1, { x: -2000, ease: Power3.easeOut }, 0.4)
       .from(heroMessage, 1, { x: -2000, ease: Power3.easeOut }, 0.6)
       .from(heroCTA, 1, { css: { opacity: 0, ease: Power3.easeOut } }, 1.5);
-
   });
   return (
     <div class="hero" ref={(element) => (heroimages = element)}>
@@ -55,11 +54,11 @@ const Herosection = () => {
         </p>
         <p>Ready? Click below and OPT in queue for pre-alpha release.</p>
         <div class="hero__button">
-        <Link to="/register">
-          <Button buttonSize="btn--wide" buttonColor="blue">
-            Register now!
-          </Button>
-        </Link>
+          <Link to="/register">
+            <Button buttonSize="btn--wide" buttonColor="blue">
+              Register now!
+            </Button>
+          </Link>
         </div>
       </div>
       <div class="mouse__container">

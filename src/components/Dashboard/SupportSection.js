@@ -20,6 +20,12 @@ function SupportSection() {
     setDescription(event.target.value);
   };
 
+  const clearState = () => {
+    setID('');
+    setSubject('');
+    setDescription('');
+  };
+
   let handleSubmit = (event) => {
     event.preventDefault();
 
@@ -31,9 +37,11 @@ function SupportSection() {
 
     // console.log(ticket);
 
-    axios
-      .post('http://localhost:5000/tickets/add', ticket)
-      .then((res) => console.log(res.data));
+    axios.post('http://localhost:5000/tickets/add', ticket).then((res) => {
+      console.log(res.data);
+      alert(`Ticket created.`);
+      clearState();
+    });
   };
 
   // const Ticket = (props) => {

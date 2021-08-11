@@ -80,7 +80,7 @@ function Navbar() {
                   Pricing
                 </Link>
               </li>
-              <li className="nav__item">
+              {/* <li className="nav__item">
                 <Link
                   to="/dashboard"
                   className="nav__links"
@@ -88,7 +88,7 @@ function Navbar() {
                 >
                   Dashboard
                 </Link>
-              </li>
+              </li> */}
               <li className="nav__btn">
                 {button ? (
                   <Link to="/login" className="btn__link">

@@ -11,7 +11,6 @@ import Dashboard from './pages/dashboard';
 import Settings from './pages/settings';
 import Support from './pages/support';
 import Notifications from './pages/notifications';
-import ConfirmAcc from './pages/confirmaccount';
 import Devices from './pages/devices';
 import Stream from './pages/livestream';
 import PageNotFound from './pages/pagenotfound';
@@ -33,7 +32,6 @@ function App() {
             <Route path="/register" component={Register}></Route>
             <Route path="/faqs" component={Faqs}></Route>
             <Route path="/dashboard" component={Dashboard}></Route>
-            <Route path="/confirmaccount" component={ConfirmAcc}></Route>
             <Route path="/settings" component={Settings}></Route>
             <Route path="/support" component={Support}></Route>
             <Route path="/notifications" component={Notifications}></Route>

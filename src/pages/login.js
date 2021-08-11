@@ -7,7 +7,7 @@ const login = () => {
     <>
       <LoginFormSection></LoginFormSection>
       {/* for testing purposes - footer may be removed later */}
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 };
