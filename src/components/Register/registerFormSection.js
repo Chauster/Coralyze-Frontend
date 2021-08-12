@@ -91,19 +91,19 @@ function RegisterFormSection() {
 
   return (
     <>
-      <div className="registersection">
+<div className="registersection">
         <form autoComplete="off" className="form" onSubmit={handleSubmit}>
-          <h1 class="form__title">Account Registration</h1>
+            <div class="form__left">
+              <h1 class="form__title">Register</h1>
+            <div class="form__subheading">
+              <p>Create your account easy with less information</p>
+            </div>
           <div className="form__inputs">
-            <div class="form__subtitle">
-              <div class="form__icon__firstname">
+            <div className="form__inputs__container">
+            <div class="form__icons">
                 <CgNametag size={30} />
               </div>
-              <label htmlFor="fname" className="form__label">
-                First Name
-              </label>
-            </div>
-            <input
+              <input
               required
               minLength="2"
               id="fname"
@@ -114,16 +114,13 @@ function RegisterFormSection() {
               value={firstName}
               onChange={handleFirstNameChange}
             />
+            </div>
           </div>
           <div className="form__inputs">
-            <div class="form__subtitle">
-              <div class="form__icon__familyname">
+          <div className="form__inputs__container">
+          <div class="form__icons">
                 <GiFamilyTree size={30} />
               </div>
-              <label htmlFor="faname" className="form__label">
-                Family Name
-              </label>
-            </div>
             <input
               required
               minLength="2"
@@ -135,16 +132,13 @@ function RegisterFormSection() {
               value={familyName}
               onChange={handleFamilyNameChange}
             />
+            </div>
           </div>
           <div className="form__inputs">
-            <div class="form__subtitle">
-              <div class="form__icon__username">
+          <div className="form__inputs__container">
+          <div class="form__icons">
                 <IoPersonCircle size={30} />
               </div>
-              <label htmlFor="username" className="form__label">
-                Username
-              </label>
-            </div>
             <input
               required
               minLength="3"
@@ -156,16 +150,13 @@ function RegisterFormSection() {
               value={username}
               onChange={(handleIDChange, handleUsernameChange)}
             />
+            </div>
           </div>
           <div className="form__inputs">
-            <div class="form__subtitle">
-              <div class="form__icon__password">
+          <div className="form__inputs__container">
+          <div class="form__icons">
                 <RiLockPasswordLine size={30} />
               </div>
-              <label htmlFor="password" className="form__label">
-                Password
-              </label>
-            </div>
             <input
               required
               minLength="8"
@@ -179,16 +170,13 @@ function RegisterFormSection() {
               value={password}
               onChange={handlePasswordChange}
             />
+            </div>
           </div>
           <div className="form__inputs">
-            <div class="form__subtitle">
-              <div class="form__icon__cpassword">
+            <div className="form__inputs__container">
+            <div class="form__icons">
                 <RiLockPasswordLine size={30} />
               </div>
-              <label htmlFor="cpassword" className="form__label">
-                Confirm password
-              </label>
-            </div>
             <input
               disabled
               id="cpassword"
@@ -200,15 +188,12 @@ function RegisterFormSection() {
               // onChange={handleConfirmPasswordChange}
             />
           </div>
+          </div>
           <div className="form__inputs">
-            <div class="form__subtitle">
-              <div class="form__icon__email">
+            <div className="form__inputs__container">
+            <div class="form__icons">
                 <HiOutlineMail size={30} />
               </div>
-              <label htmlFor="email" className="form__label">
-                Email
-              </label>
-            </div>
             <input
               required
               title="The domain portion of the email address is invalid (the portion after the @)."
@@ -221,15 +206,12 @@ function RegisterFormSection() {
               value={email}
               onChange={handleEmailChange}
             />
+            </div>
           </div>
           <div className="form__inputs">
-            <div class="form__subtitle">
-              <div class="form__icon__phnumber">
-                <BiPhoneCall size={30} />
-              </div>
-              <label htmlFor="phnumber" className="form__label">
-                Phone Number
-              </label>
+          <div className="form__inputs__container">
+            <div class="form__icons">
+              <BiPhoneCall size={30} />
             </div>
             <input
               required
@@ -244,13 +226,51 @@ function RegisterFormSection() {
               value={phone}
               onChange={handlePhoneChange}
             />
+            </div>
           </div>
           <div className="form__btn">
             <Button buttonSize="btn--wide" buttonColor="blue" type="submit">
               Register Now
             </Button>
           </div>
+          </div>
+          <div class="form__right">
+            <div class="form__right__container">
+                <div class="form__right__container__header">
+                    <h2>Features</h2>
+                </div>
+                    <div class="form__right__container__feature">
+                        <img src="https://www.freeiconspng.com/thumbs/checkmark-png/checkmark-png-transparent-33.png" alt="tick__image"/>
+                            <h4>100% Free Signup</h4>
+                    </div>
+                    <div class="form__right__container__feature">
+                        <img src="https://www.freeiconspng.com/thumbs/checkmark-png/checkmark-png-transparent-33.png" alt="tick__image"/>
+                            <h4>Discount on Plans</h4>
+                    </div>
+                    <div class="form__right__container__feature">
+                        <img src="https://www.freeiconspng.com/thumbs/checkmark-png/checkmark-png-transparent-33.png" alt="tick__image"/>
+                            <h4>Free 10GB Space</h4>
+                    </div>
+                    <div class="form__right__container__feature">
+                        <img src="https://www.freeiconspng.com/thumbs/checkmark-png/checkmark-png-transparent-33.png" alt="tick__image"/>
+                            <h4>Invite your friends and get more Space</h4>
+                    </div>
+                    <div class="form__right__container__feature">
+                        <img src="https://www.freeiconspng.com/thumbs/checkmark-png/checkmark-png-transparent-33.png" alt="tick__image"/>
+                            <h4>Subscribed to our newsletter and be kept up-to-date!</h4>
+                    </div>
+                    <div class="form__right__container__feature">
+                        <img src="https://www.freeiconspng.com/thumbs/checkmark-png/checkmark-png-transparent-33.png" alt="tick__image"/>
+                            <h4>Fast and Easy</h4>
+                    </div>
+                    <div class="form__right__container__feature">
+                        <img src="https://www.freeiconspng.com/thumbs/checkmark-png/checkmark-png-transparent-33.png" alt="tick__image"/>
+                            <h4>Receive special Perks and Offers</h4>
+                    </div>
+            </div>
+        </div>
         </form>
+        
       </div>
     </>
   );
