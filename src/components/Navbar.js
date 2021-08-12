@@ -33,7 +33,7 @@ function Navbar() {
         <div className="navbar__container">
           <div className="navbar__wrapper wrapper">
             <a href="/">
-              <img className="logo" src={logo} alt="Coralyze" />
+              <img className="logo" src={logo} alt="Coralyze" width="140px" height="30px" />
             </a>
             <div className="menu__icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
