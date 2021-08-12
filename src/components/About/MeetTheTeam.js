@@ -44,7 +44,7 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">Long Le</div>
-              <div class="card__roletitle">Lead Developer</div>
+              <div class="card__roletitle">Lead Machine Learning Developer</div>
               <div class="card__description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
                 cumque est necessitatibus debitis neque eveniet sequi quas
@@ -76,7 +76,7 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">David Chau</div>
-              <div class="card__roletitle">Lead Front-end Developer</div>
+              <div class="card__roletitle">Lead Front End Developer</div>
               <div class="card__description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
                 cumque est necessitatibus debitis neque eveniet sequi quas
@@ -92,7 +92,7 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">Bao Lam Nguyen</div>
-              <div class="card__roletitle">Developer</div>
+              <div class="card__roletitle">Machine Learning Developer</div>
               <div class="card__description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
                 cumque est necessitatibus debitis neque eveniet sequi quas
@@ -108,7 +108,7 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">Cynan Du</div>
-              <div class="card__roletitle">Developer</div>
+              <div class="card__roletitle">Machine Learning Developer</div>
               <div class="card__description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Perferendis, dignissimos! Distinctio, quidem numquam? Sunt
@@ -123,12 +123,11 @@ const test = () => {
                 </div>
               </div>
               <div class="card__title">Armaghan Zahid</div>
-              <div class="card__roletitle">Quality Assurance</div>
+              <div class="card__roletitle"></div>
               <div class="card__description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus quae, quos vero placeat nesciunt nostrum ut magnam
-                exercitationem fuga ducimus praesentium ipsum officia delectus
-                asperiores.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate, esse animi excepturi laborum magni, ea aspernatur hic
+                amet impedit natus nobis nihil a dolore perspiciatis.
               </div>
             </div>
           </div>

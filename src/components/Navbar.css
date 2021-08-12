@@ -128,6 +128,7 @@
   }
 
   .nav__links {
+    font-family: 'Gilroy-Light';
     text-align: center;
     padding: 2rem;
     width: 100%;
@@ -181,6 +182,8 @@
   .nav__btn button {
     width: 120px;
     height: 60px;
+    border: none;
+    border-radius: 10px;
   }
 }
 
