@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { Button } from '../Button';
-import defaultimg from '../../images/portraits/defaultimg.jpg';
+import { Button } from '../../Button';
+import defaultimg from '../../../images/portraits/defaultimg.jpg';
 import './SettingsSection.css';
 
 function SettingsSection() {
@@ -66,7 +66,7 @@ function SettingsSection() {
     <>
       <section className="settings">
         <div className="settings__header">
-          <h2>Settings</h2>
+          <h2>Settings.</h2>
         </div>
         <div className="settings__content">
           {/* grid starts here */}

@@ -1,6 +1,6 @@
-import React from "react";
-import DashboardNavbar from "../components/Dashboard/DashboardNavbar";
-import SettingsSection from "../components/Dashboard/SettingsSection";
+import React from 'react';
+import DashboardNavbar from '../components/Dashboard/DashboardNavbar';
+import SettingsSection from '../components/Dashboard/Settings/SettingsSection';
 
 function settings() {
   return (

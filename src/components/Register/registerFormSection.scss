@@ -13,7 +13,7 @@
     &__left {
       display: grid;
       justify-items: center;
-      
+
       @media (min-width: 64em) {
         background-color: #fff;
         padding-top: 10%;
@@ -23,6 +23,8 @@
       }
     }
     &__title {
+      font-family: 'Gilroy-Bold';
+      text-transform: capitalize;
       color: #3e74ff;
       display: flex;
       justify-content: center;
@@ -35,6 +37,10 @@
       justify-content: start;
       color: #3e74ff;
       padding-bottom: 1rem;
+
+      p {
+        font-family: 'Gilroy-Light';
+      }
     }
 
     &__input {
@@ -58,7 +64,7 @@
     &__right {
       height: 45vh;
       margin: 0;
-      box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.10);
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.1);
       @media (min-width: 64em) {
         grid-area: right;
         padding: 5%;
@@ -74,11 +80,19 @@
         color: white;
         margin-bottom: 1.125rem;
         display: flex;
+
+        h2 {
+          font-family: 'Gilroy-Bold';
+        }
       }
       &__container__feature {
         color: white;
         margin-bottom: 1.125rem;
         display: flex;
+
+        h4 {
+          font-family: 'Gilroy-Light';
+        }
       }
     }
     &__login {

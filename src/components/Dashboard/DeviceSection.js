@@ -7,7 +7,7 @@ function DeviceSection() {
   return (
     <>
       <div className="main__container">
-        <h3>Device Management</h3>
+        <h3>Device management.</h3>
         <ul className="element__list">
           <li className="element__item">
             <Link to="/livestream">

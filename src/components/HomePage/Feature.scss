@@ -16,7 +16,6 @@
 .container__feature__intro {
   display: grid;
   grid-template-columns: 1fr;
-  
 }
 @media (min-width: 40em) {
   .container__feature__intro {
@@ -30,15 +29,16 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-.feature__intro {
-  color: #3E74FF;
+.feature__intro h1 {
+  font-family: 'Gilroy-Bold';
+  color: #3e74ff;
 }
 @media (min-width: 40em) {
   .feature__intro {
     display: grid;
     justify-content: center;
     align-items: center;
-    color: #3E74FF;
+    color: #3e74ff;
   }
   h1 {
     font-size: 2.275rem;
@@ -50,26 +50,25 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    color: #3E74FF;
+    color: #3e74ff;
   }
   h1 {
     font-size: 3rem;
     text-align: center;
   }
 }
-.feature__intro__image img{
+.feature__intro__image img {
   width: 100%;
 }
 
-@media(min-width: 40em) {
+@media (min-width: 40em) {
   .feature__intro__image img {
     width: 100%;
     height: auto;
   }
-  
 }
 @media (min-width: 64em) {
-  .feature__intro__image img{
+  .feature__intro__image img {
     width: 80%;
     height: auto;
   }
@@ -77,11 +76,10 @@
 
 .feature__intro p {
   color: #000;
-
 }
 
 @media (min-width: 40em) {
-  .feature__grid{
+  .feature__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -93,14 +91,12 @@
 
 @media (min-width: 40em) {
   .feature__item {
-
     flex: 0 0 50%;
   }
 }
 
 @media (min-width: 64em) {
   .feature__item {
-
     flex: 1;
   }
 }
@@ -116,6 +112,7 @@
 }
 
 .feature__title {
+  font-family: 'Gilroy-Medium';
   font-size: 1.25rem;
   font-weight: bold;
   line-height: 1.15;
@@ -131,6 +128,7 @@
 }
 
 .feature__description {
+  font-family: 'Gilroy-Light';
   font-size: 0.875rem;
   line-height: 1.5;
   color: #6a707e;

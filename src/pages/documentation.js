@@ -1,13 +1,16 @@
 import React from 'react';
 import Sidebar from '../components/Documentation/Sidebar';
 import TechnicalSection from '../components/Documentation/TechnicalSection';
-const documentation = () => {
-    return (
-        <>
-            <Sidebar></Sidebar>
-            <TechnicalSection></TechnicalSection>
-        </>
-    )
-}
+import Footer from '../components/Footer/Footer';
 
-export default documentation
+const documentation = () => {
+  return (
+    <>
+      <Sidebar></Sidebar>
+      <TechnicalSection></TechnicalSection>
+      <Footer></Footer>
+    </>
+  );
+};
+
+export default documentation;

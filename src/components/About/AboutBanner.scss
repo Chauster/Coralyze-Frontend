@@ -18,16 +18,16 @@
       // height: 80%;
     }
     &:before {
-      content: 'Who we are';
+      font-family: 'Gilroy-Bold';
+      content: 'Who we are.';
       color: var(--primary-1);
       display: flex;
       justify-content: center;
       align-items: center;
-      // font-size: var(--FontLg);
       font-size: 4rem;
       font-weight: bold;
       line-height: 1.1;
-      text-transform: uppercase;
+
       @media screen and (max-width: 960px) {
         padding-top: 10%;
         font-size: 3rem;

@@ -1,6 +1,6 @@
 import React from 'react';
 import CTA from '../components/HomePage/CTA';
-import Footer from '../components/HomePage/Footer';
+import Footer from '../components/Footer/Footer';
 import PricingBanner from '../components/Pricing/PricingBanner';
 import PricingPackages from '../components/Pricing/PricingPackages';
 

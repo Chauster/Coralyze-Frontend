@@ -11,11 +11,11 @@ const DashboardNavbar = () => {
   return (
     <div>
       <nav class="dashnavbar">
-        <div class="dashnavbar__logo">
+        {/* <div class="dashnavbar__logo">
           <Link to="/dashboard">
             <img src={logo} alt="Coralyze Logo"></img>
           </Link>
-        </div>
+        </div> */}
         <ul class="dashnavbar__links">
           <li>
             <Link to="/dashboard">

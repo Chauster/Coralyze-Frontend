@@ -20,6 +20,10 @@
     }
     &__title {
       color: #3e74ff;
+
+      h1 {
+        font-family: 'Gilroy-Bold';
+      }
     }
 
     &__subtitle {
@@ -27,6 +31,12 @@
       align-items: center;
       justify-content: start;
       color: #3e74ff;
+
+      &__label {
+        label {
+          font-family: 'Gilroy-Bold';
+        }
+      }
     }
 
     &__input {
@@ -52,6 +62,7 @@
       margin-bottom: 2rem;
 
       p {
+        font-family: 'Gilroy-Regular';
         margin-bottom: 0.5rem;
       }
     }

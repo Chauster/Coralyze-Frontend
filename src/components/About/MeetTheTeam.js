@@ -14,7 +14,7 @@ const test = () => {
         <div class="card__content">
           <div class="container__card__intro">
             <div class="card__intro">
-              <h1>MEET THE TEAM</h1>
+              <h1>Meet the team.</h1>
             </div>
           </div>
 

@@ -62,10 +62,15 @@ $animationSpeed: 30s;
   flex-direction: column;
 
   h1 {
+    font-family: 'Gilroy-Bold';
     font-weight: 600;
   }
   h2 {
+    font-family: 'Gilroy-Medium';
     font-weight: 400;
+  }
+  p {
+    font-family: 'Gilroy-Light';
   }
 }
 @media (max-width: 25.875em) {

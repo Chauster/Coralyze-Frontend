@@ -13,8 +13,8 @@ const Carousel = () => {
   return (
     <div>
       <div class="title">
-        <h2>Rapid delivery, effective detection</h2>
-        <h1>Powered by Technology</h1>
+        <h2>Rapid delivery. Effective detection.</h2>
+        <h1>Powered by technology.</h1>
         <p>
           Our product is utilised by powerful technologies to ensure coralyze is
           the best it can be.

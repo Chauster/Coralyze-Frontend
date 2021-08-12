@@ -38,7 +38,7 @@ function ContactForm() {
         </div>
         <div className="form__content-right">
           <form autoComplete="off" className="form" onSubmit={handleSubmit}>
-            <h1>Contact Us</h1>
+            <h1>Contact us.</h1>
             <div className="form__inputs">
               <label htmlFor="name" className="form__label">
                 Name

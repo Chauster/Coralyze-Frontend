@@ -11,11 +11,12 @@
   padding-top: 2%;
 }
 
-.main_section h3 {
+.main_section-header {
+  font-family: 'Gilroy-Bold';
   color: #237c9a;
-  display: inline-block;
+  /* display: inline-block; */
   margin: 10px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 @media screen and (max-width: 960px) {
@@ -64,6 +65,7 @@
 }
 
 .notif a {
+  font-family: 'Gilroy-Regular';
   text-decoration: none;
   font-size: medium;
   font-weight: 350;
@@ -76,13 +78,15 @@
 }
 
 .subject {
+  font-family: 'Gilroy-Bold';
   color: #237c9a;
   font-size: large;
-  font-weight: 600;
+  /* font-weight: 600; */
   transition: all 0.3s ease;
 }
 
 .description {
-  color: #000;
+  font-family: 'Gilroy-Light';
+  color: gray;
   font-size: small;
 }

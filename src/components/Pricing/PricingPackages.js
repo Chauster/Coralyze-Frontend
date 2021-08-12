@@ -13,7 +13,7 @@ const PricingPackages = () => {
       <div>
         <div id="pricing_packages" className="pricing__section">
           <div className="pricing__wrapper">
-            <h1 className="pricing__heading">Packages</h1>
+            <h1 className="pricing__heading">Packages.</h1>
             <div className="pricing__container">
               <Link to="/login" className="pricing__container-card">
                 <div className="pricing__container-cardInfo">

@@ -19,7 +19,7 @@ function NotificationsSection() {
 
   return (
     <div className="main_section">
-      <h3>Notifications</h3>
+      <h3 className="main_section-header">Notifications.</h3>
       <ul className="notif_box">
         <Notification
           subject="Issue Detected"

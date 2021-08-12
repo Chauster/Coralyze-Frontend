@@ -12,10 +12,11 @@
 }
 
 .stream__container h3 {
+  font-family: 'Gilroy-Bold';
   display: inline-block;
   color: #237c9a;
   margin: 10px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 @media screen and (max-width: 960px) {

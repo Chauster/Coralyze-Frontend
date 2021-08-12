@@ -59,8 +59,9 @@
 }
 
 .form h1 {
-  font-size: 2rem;
-  text-transform: uppercase;
+  font-family: 'Gilroy-Bold';
+  font-size: 2.5rem;
+  /* text-transform: uppercase; */
   text-align: start;
   width: 80%;
   margin-bottom: 1rem;
@@ -83,12 +84,14 @@
 }
 
 .form__label {
+  font-family: 'Gilroy-Regular';
   display: inline-block;
   font-size: 0.8rem;
   margin-bottom: 6px;
 }
 
 .form__input {
+  font-family: 'Gilroy-Light';
   display: block;
   padding-left: 10px;
   outline: none;

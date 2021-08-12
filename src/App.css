@@ -1,12 +1,38 @@
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url('fonts/Gilroy-Light.woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('fonts/Gilroy-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('fonts/Gilroy-Medium.woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url('fonts/Gilroy-Bold.woff');
+}
+
+@font-face {
+  font-family: 'Gilroy-Heavy';
+  src: url('fonts/Gilroy-Heavy.woff');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat';
+  /* font-family: 'Montserrat'; */
+  font-family: 'Gilroy-Regular', sans-serif;
 }
 
 :root {
-/* BASIC COLORS */
+  /* BASIC COLORS */
   --white: #fff;
   --black: #000;
   --red: red;
@@ -18,10 +44,10 @@
   --orange: orange;
   /* PRIMARY COLORS */
   --primary-1: #3e74ff;
-  --primary-2: #1A1E23;
-  --primary-3: #09B8E9;
+  --primary-2: #1a1e23;
+  --primary-3: #09b8e9;
   /* SECONDARY COLORS */
-  --secondary-1:#6f6f71;
+  --secondary-1: #6f6f71;
   --secondary-2: #07080d;
   --secondary-3: #333333;
   /* BACKGROUND COLORS */

@@ -6,8 +6,8 @@ function StreamSection() {
   return (
     <>
       <div className="stream__container">
-        <h3>Video Stream</h3>
-        please wait...
+        <h3>Video stream.</h3>
+        {/* please wait... */}
         <br />
         <video className="video__stream" controls autoPlay>
           <source src={stream} type="video/mp4" />

@@ -69,7 +69,7 @@ function SupportSection() {
 
   return (
     <div className="main_section">
-      <h3 className="form_title">Existing Tickets</h3>
+      <h3 className="form_title">Existing tickets.</h3>
       <ul className="ticket_box">
         {/* test item from backend */}
         {/* <Ticket></Ticket> */}
@@ -79,7 +79,7 @@ function SupportSection() {
         </li>
         <li className="ticket_item">Ticket #3 - Objects not detected.</li>
       </ul>
-      <h3 className="form_title">Create Ticket</h3>
+      <h3 className="form_title">Create a ticket.</h3>
       <form autoComplete="off" className="form" onSubmit={handleSubmit}>
         <div className="form_inputs">
           <div class="form_subtitle">

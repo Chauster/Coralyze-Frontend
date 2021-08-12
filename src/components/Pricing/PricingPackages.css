@@ -13,7 +13,7 @@
   width: 280px;
   height: 500px;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 10px;
   transition: all 0.2s ease-out;
 }
 
@@ -53,6 +53,7 @@
 }
 
 .pricing__heading {
+  font-family: 'Gilroy-Bold';
   color: #1c2237;
   margin-bottom: 24px;
 }
@@ -69,15 +70,18 @@
 }
 
 .pricing__container-cardInfo h3 {
+  font-family: 'Gilroy-Bold';
   margin-bottom: 5px;
   font-size: 24px;
 }
 
 .pricing__container-cardInfo h4 {
+  font-family: 'Gilroy-Medium';
   font-size: 40px;
 }
 
 .pricing__container-cardInfo p {
+  font-family: 'Gilroy-Light';
   font-size: 14px;
   margin-bottom: 24px;
 }
@@ -92,6 +96,7 @@
 }
 
 .pricing__container-features li {
+  font-family: 'Gilroy-Regular';
   margin-bottom: 10px;
   display: flex;
   align-items: center;

@@ -14,7 +14,10 @@
     color: #3e74ff;
     margin: 10px;
     padding: 5px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
+    h3 {
+      font-family: 'Gilroy-Bold';
+    }
   }
   &__graph {
     background: #fff;
@@ -293,13 +296,13 @@
     width: 100%;
   }
   .dashboard__graph__four__grid__right {
-      height: 70.9%;
-      background-color: #2a3050;
-      border: 5px solid #3e74ff;
-      border-left: hidden;
-      border-top: hidden;
-      border-bottom-right-radius: 15px;
-      padding: 0;
+    height: 70.9%;
+    background-color: #2a3050;
+    border: 5px solid #3e74ff;
+    border-left: hidden;
+    border-top: hidden;
+    border-bottom-right-radius: 15px;
+    padding: 0;
     //   p {
     //     color: #fff;
     //     font-weight: 500;
@@ -312,7 +315,6 @@
       display: flex;
       font-size: 0.765rem;
     }
-    
   }
   .square__one {
     margin-top: 2%;

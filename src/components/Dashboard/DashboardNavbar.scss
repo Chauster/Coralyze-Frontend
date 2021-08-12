@@ -11,6 +11,7 @@
 
   li {
     position: relative;
+    margin-top: 10%;
     margin-bottom: 1rem;
     list-style: none;
   }
@@ -29,13 +30,13 @@
     opacity: 0.4;
   }
 
-  &__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
+  // &__logo {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   margin-top: 10%;
+  //   margin-bottom: 10%;
+  // }
   &__links {
     height: 100%;
     margin-top: 10px;
@@ -49,6 +50,7 @@
     opacity: 0.6;
   }
   &__links__label {
+    font-family: 'Gilroy-Regular';
     font-size: 14px;
     color: #000;
   }
@@ -64,6 +66,10 @@
     height: 60px;
     bottom: 0;
     justify-content: center;
+
+    li {
+      margin-top: 0;
+    }
 
     li a {
       transition: none;
@@ -85,8 +91,8 @@
     &__links__label {
       display: none;
     }
-    &__logo {
-      display: none;
-    }
+    // &__logo {
+    //   display: none;
+    // }
   }
 }

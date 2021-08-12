@@ -2,7 +2,7 @@ import React from 'react';
 import About from '../components/About/AboutBanner';
 import Statement from '../components/About/MissionStatement';
 import MeetTheTeam from '../components/About/MeetTheTeam';
-import Footer from '../components/HomePage/Footer';
+import Footer from '../components/Footer/Footer';
 const about = () => {
   return (
     <div>

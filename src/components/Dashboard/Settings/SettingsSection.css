@@ -20,12 +20,15 @@
 }
 
 .settings__header {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: flex;
   padding-bottom: 20px;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
   grid-template-columns: 1fr;
+}
+
+.settings__header h2 {
+  font-family: 'Gilroy-Bold';
 }
 
 .settings__item {
@@ -41,10 +44,11 @@
 }
 
 .settings__item-header {
+  font-family: 'Gilroy-Bold';
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 600;
+  /* font-weight: 600; */
   border-bottom: 1px solid;
   width: 100%;
 }
@@ -57,6 +61,7 @@
 }
 
 .settings__navbar-item {
+  font-family: 'Gilroy-Regular';
   padding: 5px;
   position: relative;
   height: auto;
@@ -109,6 +114,7 @@
 }
 
 .edit__btn {
+  font-family: 'Gilroy-Light';
   margin-top: 10px;
   color: white;
   background-color: black;
@@ -116,17 +122,20 @@
   border: none;
   text-align: center;
   padding: 10px;
+  cursor: pointer;
 }
 
 .profile__name {
+  font-family: 'Gilroy-Bold';
   text-align: left;
   font-size: large;
-  font-weight: 700;
+  /* font-weight: 700; */
   margin-top: 10px;
   /* padding: 10px; */
 }
 
 .profile__description {
+  font-family: 'Gilroy-Light';
   text-align: left;
   padding-left: 5%;
   padding-right: 5%;
