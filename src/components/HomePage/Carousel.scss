@@ -1,3 +1,6 @@
+.carousel {
+  background-color: var(--white);
+}
 @mixin side-gradient {
   background: linear-gradient(
     to right,

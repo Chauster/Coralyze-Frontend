@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   width: auto;
-  height: 100vh;
+  height: 91vh;
   background-color: var(--ltbackground);
 
   .form {
@@ -13,9 +13,10 @@
     &__left {
       display: grid;
       justify-items: center;
-
+      
       @media (min-width: 64em) {
         background-color: #fff;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.10);
         padding-top: 10%;
         padding-bottom: 10%;
         grid-area: left;
@@ -23,8 +24,6 @@
       }
     }
     &__title {
-      font-family: 'Gilroy-Bold';
-      text-transform: capitalize;
       color: #3e74ff;
       display: flex;
       justify-content: center;
@@ -37,15 +36,15 @@
       justify-content: start;
       color: #3e74ff;
       padding-bottom: 1rem;
-
-      p {
-        font-family: 'Gilroy-Light';
-      }
     }
 
     &__input {
-      width: 360px;
-      border-bottom: 2px solid #808080;
+      border: 1px solid;
+      border-radius: 10px;
+      padding: 10px;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      border-color: rgb(76, 154, 255);
     }
     &__inputs__container {
       position: relative;
@@ -62,9 +61,18 @@
       padding-right: 10px;
     }
     &__right {
-      height: 45vh;
+      height: 50vh;
       margin: 0;
-      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.10);
+
+      &:after {
+        content: '';
+        background-image:url('../../images/paper_plane.svg');
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 250px;
+        display: block;
+      }
       @media (min-width: 64em) {
         grid-area: right;
         padding: 5%;
@@ -77,12 +85,11 @@
         }
       }
       &__container__header {
-        color: white;
-        margin-bottom: 1.125rem;
         display: flex;
 
         h2 {
-          font-family: 'Gilroy-Bold';
+          color: white;
+          margin-bottom: 1.5rem;
         }
       }
       &__container__feature {
@@ -91,12 +98,27 @@
         display: flex;
 
         h4 {
-          font-family: 'Gilroy-Light';
+          font-weight: 400;
         }
       }
     }
     &__login {
       margin-bottom: 5rem;
+    }
+    &__confirm {
+      margin-bottom: 1rem;
+      p {
+        text-align: center;
+        font-size: 0.775rem;
+      }
+      &__tos {
+        max-width: 320px;
+        padding: 2%;
+        a {
+          text-decoration: none;
+          color: var(--primary-1);
+        }
+      }
     }
     &__register {
       margin-bottom: 2rem;
@@ -110,7 +132,8 @@
       .form {
         &__left {
           grid-area: middle;
-          background: none;
+          background-color: #fff;
+          border-radius: 8px;
           padding: 5%;
         }
         &__right {
@@ -147,10 +170,11 @@
         align-items: center;
         justify-content: center;
         &__left {
+          padding-top: 100%;
           grid-area: middle;
           background: none;
-          padding: 25%;
           margin: 0;
+          background-color: #fff;
         }
         &__right {
           display: none;
@@ -159,6 +183,11 @@
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+        &__subheading {
+          p {
+            text-align: center;
+          }
         }
         &__inputs {
           padding: 5%;
@@ -181,6 +210,11 @@
             margin-bottom: 1rem;
           }
         }
+        &__btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
     @media (min-width: 64em) {
@@ -192,31 +226,3 @@
   }
 }
 
-.form__input:required {
-  border-bottom: 2px solid rgb(89, 211, 105);
-}
-
-.form__input:required:invalid {
-  border-bottom: 2px solid rgb(212, 52, 52);
-}
-// .right {
-//   background-color: #4285F4;
-//   border-radius: 5px;
-//   padding: 2rem;
-//   z-index: 1;
-//   height: 650px;
-//   width: 450px;
-//   box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.10);
-
-// &__container__feature {
-//   color: white;
-//   margin-bottom: 1.125rem;
-//   display: flex;
-
-//   img {
-//     width: 15px;
-//     height: 15px;
-//     margin-right: 5px;
-//   }
-// }
-// }

@@ -11,7 +11,7 @@ import php from '../../images/carousel/php.png';
 
 const Carousel = () => {
   return (
-    <div>
+    <div class="carousel">
       <div class="title">
         <h2>Rapid delivery. Effective detection.</h2>
         <h1>Powered by technology.</h1>

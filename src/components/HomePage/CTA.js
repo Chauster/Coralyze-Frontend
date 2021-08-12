@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './CTA.scss';
-import ctaImage from '../../images/CTA.svg';
+import ctaImage from '../../images/CTAv2.svg';
 import { Button } from '../Button';
 import { Link } from 'react-router-dom';
 
