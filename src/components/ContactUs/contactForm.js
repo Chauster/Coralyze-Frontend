@@ -6,7 +6,7 @@ import './contactForm.css';
 function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  // const [phone, setPhone] = useState('');
   const [question, setQuestion] = useState('');
 
   let handleNameChange = (event) => {
@@ -17,16 +17,17 @@ function ContactForm() {
     setEmail(event.target.value);
   };
 
-  let handlePhoneChange = (event) => {
-    setPhone(event.target.value);
-  };
+  // let handlePhoneChange = (event) => {
+  //   setPhone(event.target.value);
+  // };
 
   let handleQuestionChange = (event) => {
     setQuestion(event.target.value);
   };
 
   let handleSubmit = (event) => {
-    alert(`${name} ${email} ${phone} ${question}`);
+    // alert(`${name} ${email} ${phone} ${question}`);
+    alert(`${name} ${email} ${question}`);
     event.preventDefault();
   };
 
@@ -72,7 +73,7 @@ function ContactForm() {
                 onChange={handleEmailChange}
               />
             </div>
-            <div className="form__inputs">
+            {/* <div className="form__inputs">
               <label htmlFor="phone" className="form__label">
                 Phone Number
               </label>
@@ -89,7 +90,7 @@ function ContactForm() {
                 value={phone}
                 onChange={handlePhoneChange}
               />
-            </div>
+            </div> */}
             <div className="form__inputs">
               <label htmlFor="question" className="form__label">
                 Enquiry

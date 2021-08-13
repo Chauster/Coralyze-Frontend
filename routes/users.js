@@ -9,22 +9,22 @@ router.route('/').get((req, res) => {
 
 router.route('/add').post((req, res) => {
   const _id = req.body._id;
-  const firstName = req.body.firstName;
-  const familyName = req.body.familyName;
+  // const firstName = req.body.firstName;
+  // const familyName = req.body.familyName;
   const username = req.body.username;
   const password = req.body.password;
   const email = req.body.email;
-  const phone = Number(req.body.phone);
+  // const phone = Number(req.body.phone);
   // const dob = Date.parse(req.body.dob);
 
   const newUser = new User({
     _id,
-    firstName,
-    familyName,
+    // firstName,
+    // familyName,
     username,
     password,
     email,
-    phone,
+    // phone,
     // dob
   });
 
@@ -56,12 +56,12 @@ router.route('/update/:id').post((req, res) => {
   User.findById(req.params.id)
     .then((user) => {
       user._id = req.body._id;
-      user.firstName = req.body.firstName;
-      user.familyName = req.body.familyName;
+      // user.firstName = req.body.firstName;
+      // user.familyName = req.body.familyName;
       user.username = req.body.username;
       user.password = req.body.password;
       user.email = req.body.email;
-      user.phone = Number(req.body.phone);
+      // user.phone = Number(req.body.phone);
       // user.dob = Date.parse(req.body.dob);
 
       user

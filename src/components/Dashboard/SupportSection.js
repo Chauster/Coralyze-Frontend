@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '../Button';
 import axios from 'axios';
 import './SupportSection.css';
@@ -7,6 +7,20 @@ function SupportSection() {
   const [_id, setID] = useState('');
   const [subject, setSubject] = useState('');
   const [description, setDescription] = useState('');
+
+  useEffect(() => {
+    axios
+      .get('http://localhost:5000/tickets')
+      .then((res) => {
+        console.log(res.data);
+        // console.log(res.data.subject);
+        // console.log(res.data.description);
+      })
+      .catch((err) => {
+        console.log('No tickets to display!');
+        console.log('Error: ' + err);
+      });
+  });
 
   let handleIDChange = (event) => {
     setID(event.target.value);

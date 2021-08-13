@@ -11,20 +11,20 @@ const userSchema = new Schema(
       trim: true,
       minlength: 3,
     },
-    firstName: {
-      type: String,
-      required: true,
-      unique: false,
-      trim: true,
-      minlength: 2,
-    },
-    familyName: {
-      type: String,
-      required: true,
-      unique: false,
-      trim: true,
-      minlength: 2,
-    },
+    // firstName: {
+    //   type: String,
+    //   required: true,
+    //   unique: false,
+    //   trim: true,
+    //   minlength: 2,
+    // },
+    // familyName: {
+    //   type: String,
+    //   required: true,
+    //   unique: false,
+    //   trim: true,
+    //   minlength: 2,
+    // },
     username: {
       type: String,
       required: true,
@@ -43,12 +43,12 @@ const userSchema = new Schema(
       // unique: true,
       // trim: true,
     },
-    phone: {
-      type: Number,
-      required: true,
-      trim: true,
-      minlength: 10,
-    },
+    // phone: {
+    //   type: Number,
+    //   required: true,
+    //   trim: true,
+    //   minlength: 10,
+    // },
     // dob: {
     //   type: Date,
     //   required: true,

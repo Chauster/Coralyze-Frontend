@@ -37,10 +37,10 @@ function LoginFormSection() {
         res.data.password === user.password
           ? (window.location = '/dashboard')
           : alert(`Incorrect Username or Password`);
-        console.log(res.data); // object from cloud
-        console.log(res.data.password); // current user input
-        console.log(res.password); // undefined
-        console.log(password); // current user input
+        // console.log(res.data); // object from cloud
+        // console.log(res.data.password); // current user input
+        // console.log(res.password); // undefined
+        // console.log(password); // current user input
       })
       .catch((err) => {
         alert(`User doesn't exist!`);

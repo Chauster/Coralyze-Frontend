@@ -6,24 +6,25 @@ import './SettingsSection.css';
 
 function SettingsSection() {
   const [_id, setID] = useState('');
-  const [firstName, setFirstName] = useState('');
-  const [familyName, setFamilyName] = useState('');
+  // const [firstName, setFirstName] = useState('');
+  // const [familyName, setFamilyName] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  // const [confirmPassword, setConfirmPassword] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  // const [phone, setPhone] = useState('');
 
   let handleIDChange = (event) => {
     setID(event.target.value);
   };
 
-  let handleFirstNameChange = (event) => {
-    setFirstName(event.target.value);
-  };
+  // let handleFirstNameChange = (event) => {
+  //   setFirstName(event.target.value);
+  // };
 
-  let handleFamilyNameChange = (event) => {
-    setFamilyName(event.target.value);
-  };
+  // let handleFamilyNameChange = (event) => {
+  //   setFamilyName(event.target.value);
+  // };
 
   let handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -33,33 +34,47 @@ function SettingsSection() {
     setPassword(event.target.value);
   };
 
+  // let handleConfirmPasswordChange = (event) => {
+  //   setConfirmPassword(event.target.value);
+  // };
+
   let handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
 
-  let handlePhoneChange = (event) => {
-    setPhone(event.target.value);
-  };
+  // let handlePhoneChange = (event) => {
+  //   setPhone(event.target.value);
+  // };
 
   let handleSubmit = (event) => {
     event.preventDefault();
 
     const user = {
       _id: username,
-      firstName: firstName,
-      familyName: familyName,
+      // firstName: firstName,
+      // familyName: familyName,
       username: username,
       password: password,
+      // confirmPassword: setConfirmPassword,
       email: email,
-      phone: phone,
+      // phone: phone,
     };
 
     // for testing purposes
     console.log(user);
 
     axios
-      .post('http://localhost:5000/users/update', user)
-      .then((res) => console.log(res.data));
+      // .get(`http://localhost:5000/users/authenticate/${_id}`)
+      .post(`http://localhost:5000/users/update/${username}`, user)
+      .then((res) => {
+        alert(`User updated.`);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        alert(`User doesn't exist!`);
+        // console.log("User doesn't exist");
+        console.log('Error: ' + err);
+      });
   };
 
   return (
@@ -74,15 +89,19 @@ function SettingsSection() {
             <div className="settings__item">
               <div className="settings__item-header">Settings</div>
               <ul className="settings__navbar-list">
-                <li className="settings__navbar-item">Personal Information</li>
+                {/* <li className="settings__navbar-item">Personal Information</li> */}
                 <li className="settings__navbar-item">Account Information</li>
                 <li className="settings__navbar-item">Site Preferences</li>
               </ul>
             </div>
             <div className="settings__item">
               <div className="settings__item-header">Update Details</div>
-              <form autoComplete="off" className="settings__form">
-                <div className="settings__form-inputs">
+              <form
+                autoComplete="off"
+                className="settings__form"
+                onSubmit={handleSubmit}
+              >
+                {/* <div className="settings__form-inputs">
                   <div class="form__subtitle">
                     <label htmlFor="fname" className="form__label">
                       First Name
@@ -99,8 +118,8 @@ function SettingsSection() {
                     // value={firstName}
                     // onChange={handleFirstNameChange}
                   />
-                </div>
-                <div className="settings__form-inputs">
+                </div> */}
+                {/* <div className="settings__form-inputs">
                   <div class="form__subtitle">
                     <label htmlFor="faname" className="form__label">
                       Family Name
@@ -117,7 +136,7 @@ function SettingsSection() {
                     // value={familyName}
                     // onChange={handleFamilyNameChange}
                   />
-                </div>
+                </div> */}
                 <div className="settings__form-inputs">
                   <div class="form__subtitle">
                     <label htmlFor="username" className="form__label">
@@ -132,14 +151,14 @@ function SettingsSection() {
                     name="username"
                     className="settings__form-field"
                     placeholder="Enter your username"
-                    // value={username}
-                    // onChange={(handleIDChange, handleUsernameChange)}
+                    value={username}
+                    onChange={(handleIDChange, handleUsernameChange)}
                   />
                 </div>
                 <div className="settings__form-inputs">
                   <div class="form__subtitle">
                     <label htmlFor="password" className="form__label">
-                      Password
+                      New Password
                     </label>
                   </div>
                   <input
@@ -152,8 +171,25 @@ function SettingsSection() {
                     name="password"
                     className="settings__form-field"
                     placeholder="Enter your password"
-                    // value={password}
-                    // onChange={handlePasswordChange}
+                    value={password}
+                    onChange={handlePasswordChange}
+                  />
+                </div>
+                <div className="settings__form-inputs">
+                  <div class="form__subtitle">
+                    <label htmlFor="password" className="form__label">
+                      Confirm Password
+                    </label>
+                  </div>
+                  <input
+                    disabled
+                    id="cpassword"
+                    type="password"
+                    name="cpassword"
+                    className="form__input"
+                    placeholder="Confirm your password (field currently disabled)"
+                    // value={confirmPassword}
+                    // onChange={handleConfirmPasswordChange}
                   />
                 </div>
                 <div className="settings__form-inputs">
@@ -171,11 +207,11 @@ function SettingsSection() {
                     name="email"
                     className="settings__form-field"
                     placeholder="Enter your email"
-                    // value={email}
-                    // onChange={handleEmailChange}
+                    value={email}
+                    onChange={handleEmailChange}
                   />
                 </div>
-                <div className="settings__form-inputs">
+                {/* <div className="settings__form-inputs">
                   <div class="form__subtitle">
                     <label htmlFor="phnumber" className="form__label">
                       Phone Number
@@ -194,7 +230,7 @@ function SettingsSection() {
                     // value={phone}
                     // onChange={handlePhoneChange}
                   />
-                </div>
+                </div> */}
                 <div className="settings__form-btn">
                   <Button
                     buttonSize="btn--medium"
