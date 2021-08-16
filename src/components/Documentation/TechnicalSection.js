@@ -59,14 +59,38 @@ const TechnicalSection = () => {
           <article>
             <p>Images of the Tinker Edge T Device</p>
             <div class="technical__images">
-              <img src={image1} class="technical__images__horizontal"></img>
-              <img src={image2} class="technical__images__horizontal"></img>
+              <img
+                src={image1}
+                class="technical__images__horizontal"
+                alt=""
+              ></img>
+              <img
+                src={image2}
+                class="technical__images__horizontal"
+                alt=""
+              ></img>
             </div>
             <div class="technical__images">
-              <img src={image3} class="technical__images__vertical"></img>
-              <img src={image4} class="technical__images__vertical"></img>
-              <img src={image5} class="technical__images__vertical"></img>
-              <img src={image6} class="technical__images__vertical"></img>
+              <img
+                src={image3}
+                class="technical__images__vertical"
+                alt=""
+              ></img>
+              <img
+                src={image4}
+                class="technical__images__vertical"
+                alt=""
+              ></img>
+              <img
+                src={image5}
+                class="technical__images__vertical"
+                alt=""
+              ></img>
+              <img
+                src={image6}
+                class="technical__images__vertical"
+                alt=""
+              ></img>
             </div>
           </article>
         </div>

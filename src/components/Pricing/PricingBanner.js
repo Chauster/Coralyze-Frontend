@@ -26,7 +26,7 @@ function PricingBanner() {
         </div>
       </div>
       <div className="banner__image">
-        <img src={saleimg} alt="sale-image" />
+        <img src={saleimg} alt="sale" />
       </div>
     </section>
   );

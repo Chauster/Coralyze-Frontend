@@ -1,14 +1,14 @@
 import React from 'react';
 import DashboardNavbar from '../components/Dashboard/DashboardNavbar';
-import SettingsSection from '../components/Dashboard/Settings/SettingsSection';
+import SiteSettings from '../components/Dashboard/Settings/SiteSettings';
 
-function settings() {
+function sitesettings() {
   return (
     <>
       <DashboardNavbar></DashboardNavbar>
-      <SettingsSection></SettingsSection>
+      <SiteSettings></SiteSettings>
     </>
   );
 }
 
-export default settings;
+export default sitesettings;

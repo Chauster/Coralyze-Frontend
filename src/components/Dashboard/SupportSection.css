@@ -24,7 +24,7 @@
     position: relative;
     top: 0;
     left: 0;
-    height: auto;
+    /* height: auto; */
     width: 100%;
     padding-left: 1%;
     padding-right: 1%;
@@ -32,11 +32,18 @@
   }
 }
 
+.ticket_container {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .ticket_box {
-  max-height: 80%;
-  overflow-y: scroll;
+  /* max-height: 80%; */
+  /* height: 50%; */
+  /* overflow-y: scroll; */
   margin: 10px;
-  position: relative;
+  /* position: relative; */
   background-color: #fff;
   border: 1px solid lightgray;
   border-radius: 8px;
@@ -63,6 +70,11 @@
   color: #ff6543;
   background: #eff0f2;
   transition: all 0.3s ease;
+}
+
+.load_btn {
+  align-items: center;
+  justify-content: center;
 }
 
 .form {
@@ -96,13 +108,10 @@
   background: #fff;
   display: block;
   padding-left: 10px;
-  /* outline: none;
-  border-radius: 2px; */
   border: 1px solid lightgray;
   border-radius: 8px;
   height: 40px;
   width: 100%;
-  /* border: none; */
 }
 
 .form_inputs textarea {
@@ -132,11 +141,15 @@
   }
 }
 
-.form_input:required {
-  /* border: none; */
-  border-bottom: 2px solid rgb(89, 211, 105);
+.ticket_subject {
+  font-family: 'Gilroy-Bold';
+  color: #237c9a;
+  font-size: large;
+  transition: all 0.3s ease;
 }
 
-.form_input:required:invalid {
-  border-bottom: 2px solid rgb(212, 52, 52);
+.ticket_description {
+  font-family: 'Gilroy-Light';
+  color: gray;
+  font-size: small;
 }

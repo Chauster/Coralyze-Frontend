@@ -2,29 +2,19 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { Button } from '../../Button';
 import defaultimg from '../../../images/portraits/defaultimg.jpg';
-import './SettingsSection.css';
+import './AccountSettings.css';
+import { Link } from 'react-router-dom';
 
-function SettingsSection() {
+function AccountSettings() {
   const [_id, setID] = useState('');
-  // const [firstName, setFirstName] = useState('');
-  // const [familyName, setFamilyName] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  // const [confirmPassword, setConfirmPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [email, setEmail] = useState('');
-  // const [phone, setPhone] = useState('');
 
   let handleIDChange = (event) => {
     setID(event.target.value);
   };
-
-  // let handleFirstNameChange = (event) => {
-  //   setFirstName(event.target.value);
-  // };
-
-  // let handleFamilyNameChange = (event) => {
-  //   setFamilyName(event.target.value);
-  // };
 
   let handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -34,47 +24,59 @@ function SettingsSection() {
     setPassword(event.target.value);
   };
 
-  // let handleConfirmPasswordChange = (event) => {
-  //   setConfirmPassword(event.target.value);
-  // };
+  let handleConfirmPasswordChange = (event) => {
+    setConfirmPassword(event.target.value);
+  };
 
   let handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
 
-  // let handlePhoneChange = (event) => {
-  //   setPhone(event.target.value);
-  // };
+  const clearState = () => {
+    setID('');
+    setUsername('');
+    setPassword('');
+    setConfirmPassword('');
+    setEmail('');
+  };
 
-  let handleSubmit = (event) => {
-    event.preventDefault();
+  let checkMatch = () => {
+    return password !== confirmPassword ? false : true;
+  };
 
+  let updateUser = () => {
     const user = {
       _id: username,
-      // firstName: firstName,
-      // familyName: familyName,
       username: username,
       password: password,
-      // confirmPassword: setConfirmPassword,
       email: email,
-      // phone: phone,
     };
 
     // for testing purposes
     console.log(user);
 
     axios
-      // .get(`http://localhost:5000/users/authenticate/${_id}`)
       .post(`http://localhost:5000/users/update/${username}`, user)
       .then((res) => {
         alert(`User updated.`);
         console.log(res.data);
+        clearState();
       })
       .catch((err) => {
         alert(`User doesn't exist!`);
-        // console.log("User doesn't exist");
         console.log('Error: ' + err);
       });
+  };
+
+  let handleSubmit = (event) => {
+    event.preventDefault();
+    return checkMatch() === true
+      ? updateUser()
+      : alert(`Passwords do not match!`);
+  };
+
+  let testFunction = () => {
+    alert(`Sorry boss. Functionality still under development.`);
   };
 
   return (
@@ -89,9 +91,12 @@ function SettingsSection() {
             <div className="settings__item">
               <div className="settings__item-header">Settings</div>
               <ul className="settings__navbar-list">
-                {/* <li className="settings__navbar-item">Personal Information</li> */}
-                <li className="settings__navbar-item">Account Information</li>
-                <li className="settings__navbar-item">Site Preferences</li>
+                <li className="settings__navbar-item">
+                  <Link to="/accountsettings">Account Information</Link>
+                </li>
+                <li className="settings__navbar-item">
+                  <Link to="/sitesettings">Site Preferences</Link>
+                </li>
               </ul>
             </div>
             <div className="settings__item">
@@ -101,42 +106,6 @@ function SettingsSection() {
                 className="settings__form"
                 onSubmit={handleSubmit}
               >
-                {/* <div className="settings__form-inputs">
-                  <div class="form__subtitle">
-                    <label htmlFor="fname" className="form__label">
-                      First Name
-                    </label>
-                  </div>
-                  <input
-                    required
-                    minLength="2"
-                    id="fname"
-                    type="text"
-                    name="fname"
-                    className="settings__form-field"
-                    placeholder="Enter your first name"
-                    // value={firstName}
-                    // onChange={handleFirstNameChange}
-                  />
-                </div> */}
-                {/* <div className="settings__form-inputs">
-                  <div class="form__subtitle">
-                    <label htmlFor="faname" className="form__label">
-                      Family Name
-                    </label>
-                  </div>
-                  <input
-                    required
-                    minLength="2"
-                    id="faname"
-                    type="text"
-                    name="faname"
-                    className="settings__form-field"
-                    placeholder="Enter your family name"
-                    // value={familyName}
-                    // onChange={handleFamilyNameChange}
-                  />
-                </div> */}
                 <div className="settings__form-inputs">
                   <div class="form__subtitle">
                     <label htmlFor="username" className="form__label">
@@ -182,14 +151,17 @@ function SettingsSection() {
                     </label>
                   </div>
                   <input
-                    disabled
+                    // disabled
+                    required
+                    title="Please check that the passwords match."
                     id="cpassword"
                     type="password"
                     name="cpassword"
-                    className="form__input"
-                    placeholder="Confirm your password (field currently disabled)"
-                    // value={confirmPassword}
-                    // onChange={handleConfirmPasswordChange}
+                    className="settings__form-field"
+                    // placeholder="Confirm your password (field currently disabled)"
+                    placeholder="Confirm your password"
+                    value={confirmPassword}
+                    onChange={handleConfirmPasswordChange}
                   />
                 </div>
                 <div className="settings__form-inputs">
@@ -211,26 +183,6 @@ function SettingsSection() {
                     onChange={handleEmailChange}
                   />
                 </div>
-                {/* <div className="settings__form-inputs">
-                  <div class="form__subtitle">
-                    <label htmlFor="phnumber" className="form__label">
-                      Phone Number
-                    </label>
-                  </div>
-                  <input
-                    required
-                    minLength="10"
-                    maxLength="10"
-                    // pattern="[-+]?[0-9]"
-                    id="phnumber"
-                    type="numeric"
-                    name="phnumber"
-                    className="settings__form-field"
-                    placeholder="Enter your phone number"
-                    // value={phone}
-                    // onChange={handlePhoneChange}
-                  />
-                </div> */}
                 <div className="settings__form-btn">
                   <Button
                     buttonSize="btn--medium"
@@ -245,10 +197,16 @@ function SettingsSection() {
             <div className="settings__item">
               <div className="settings__item-header">Profile</div>
               <div className="profile__image">
-                <img src={defaultimg} />
+                <img src={defaultimg} alt="" />
               </div>
               <div className="profile__edit-btn">
-                <button className="edit__btn">Edit Profile</button>
+                <Button
+                  buttonSize="btn--medium"
+                  buttonColor="primary"
+                  onClick={testFunction}
+                >
+                  Edit Profile
+                </Button>
               </div>
               <div className="profile__name">Default User</div>
               <div className="profile__description">
@@ -264,4 +222,4 @@ function SettingsSection() {
   );
 }
 
-export default SettingsSection;
+export default AccountSettings;

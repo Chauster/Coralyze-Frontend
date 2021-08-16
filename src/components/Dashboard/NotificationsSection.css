@@ -24,7 +24,9 @@
     position: relative;
     top: 0;
     left: 0;
-    height: auto;
+    bottom: 60px;
+    overflow-y: hidden;
+    height: calc(100% - 60px);
     width: 100%;
     padding-left: 1%;
     padding-right: 1%;

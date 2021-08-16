@@ -40,7 +40,7 @@ const Sidebar = () => {
             </div>
           </li>
           <li>
-            <a class="navbar__link" href="#">
+            <a class="navbar__link" href="#Introduction">
               MORE TO BE ADDED SOON
             </a>
           </li>

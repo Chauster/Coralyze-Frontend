@@ -7,20 +7,38 @@ function SupportSection() {
   const [_id, setID] = useState('');
   const [subject, setSubject] = useState('');
   const [description, setDescription] = useState('');
+  const [ticketList, setTicketList] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   axios
+  //     .get('http://localhost:5000/tickets/')
+  //     .then((res) => {
+  //       setTicketList(res.data);
+  //       // setTicketList(res.data.map((ticket) => ticket));
+  //       // console.log(res.data);
+  //       console.log(ticketList);
+  //     })
+  //     .then(setIsLoading(false))
+  //     .catch((err) => {
+  //       console.log('No tickets to display!');
+  //       console.log('Error: ' + err);
+  //     }, []);
+  // }, []);
+
+  const loadTickets = () => {
     axios
-      .get('http://localhost:5000/tickets')
+      .get('http://localhost:5000/tickets/')
       .then((res) => {
-        console.log(res.data);
-        // console.log(res.data.subject);
-        // console.log(res.data.description);
+        setTicketList(res.data);
+        // console.log(ticketList);
       })
+      .then(setIsLoading(false))
       .catch((err) => {
         console.log('No tickets to display!');
         console.log('Error: ' + err);
-      });
-  });
+      }, []);
+  };
 
   let handleIDChange = (event) => {
     setID(event.target.value);
@@ -49,50 +67,52 @@ function SupportSection() {
       description: description,
     };
 
-    // console.log(ticket);
-
     axios.post('http://localhost:5000/tickets/add', ticket).then((res) => {
       console.log(res.data);
-      alert(`Ticket created.`);
+      console.log('Ticket created.');
       clearState();
+      loadTickets();
     });
   };
-
-  // const Ticket = (props) => {
-  //   return (
-  //     <ul className="ticket_box">
-  //       <li className="ticket_item">
-  //         {props.subject}
-  //         {props.description}
-  //       </li>
-  //     </ul>
-  //   );
-  // };
-
-  // axios
-  //   .get('http://localhost:5000/tickets')
-  //   .then((res) => {
-  //     console.log(res.data);
-  //     console.log(res.data.subject);
-  //     console.log(res.data.description);
-  //   })
-  //   .catch((err) => {
-  //     console.log('No tickets to display!');
-  //     console.log('Error: ' + err);
-  //   });
 
   return (
     <div className="main_section">
       <h3 className="form_title">Existing tickets.</h3>
-      <ul className="ticket_box">
-        {/* test item from backend */}
-        {/* <Ticket></Ticket> */}
-        <li className="ticket_item">Ticket #1 - Device constantly reboots.</li>
-        <li className="ticket_item">
-          Ticket #2 - Device stream crashing, displays error.
-        </li>
-        <li className="ticket_item">Ticket #3 - Objects not detected.</li>
-      </ul>
+      <div className="ticket_container">
+        <ul className="ticket_box">
+          {isLoading ? (
+            <li className="ticket_item">
+              <span className="ticket_subject">Loading tickets...</span>
+            </li>
+          ) : (
+            Object.keys(ticketList).map((ticket) => {
+              return (
+                <li className="ticket_item">
+                  <span key={ticketList[ticket]._id} className="ticket_subject">
+                    {ticketList[ticket].subject}
+                  </span>
+                  <br />
+                  <span
+                    key={ticketList[ticket]._id}
+                    className="ticket_description"
+                  >
+                    {ticketList[ticket].description}
+                  </span>
+                </li>
+              );
+            })
+          )}
+        </ul>
+        <div className="load_btn">
+          <Button
+            buttonSize="btn--medium"
+            buttonColor="primary"
+            onClick={loadTickets}
+          >
+            Load Tickets
+          </Button>
+        </div>
+      </div>
       <h3 className="form_title">Create a ticket.</h3>
       <form autoComplete="off" className="form" onSubmit={handleSubmit}>
         <div className="form_inputs">

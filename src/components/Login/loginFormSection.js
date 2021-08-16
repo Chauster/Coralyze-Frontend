@@ -44,7 +44,6 @@ function LoginFormSection() {
       })
       .catch((err) => {
         alert(`User doesn't exist!`);
-        // console.log("User doesn't exist");
         console.log('Error: ' + err);
       });
 
@@ -119,7 +118,7 @@ function LoginFormSection() {
           </div>{' '}
           {/*  end of left section */}
           <div class="form__right">
-            <img src={rightimage}></img>
+            <img src={rightimage} alt=""></img>
           </div>
         </form>
       </div>

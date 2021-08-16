@@ -5,7 +5,7 @@ import { RiDashboardLine } from 'react-icons/ri';
 import { BiDevices, BiSupport, BiLogOut } from 'react-icons/bi';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 import { IoSettingsOutline } from 'react-icons/io5';
-import logo from '../../images/logo-2.png';
+// import logo from '../../images/logo-2.png';
 
 const DashboardNavbar = () => {
   return (
@@ -36,7 +36,7 @@ const DashboardNavbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/settings">
+            <Link to="/accountsettings">
               <IoSettingsOutline class="dashnavbar__links__icon" />
               <span class="dashnavbar__links__label">Settings</span>
             </Link>

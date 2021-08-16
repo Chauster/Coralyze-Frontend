@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import './Footer.scss';
 import logo from '../../images/logo-black.svg';
 // import github from '../../images/icon-github.svg';

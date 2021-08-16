@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import './CTA.scss';
 import ctaImage from '../../images/CTAv2.svg';
 import { Button } from '../Button';
@@ -25,7 +25,7 @@ const CTA = () => {
           </div>
         </div>
         <div class="CTA__image">
-          <img src={ctaImage}></img>
+          <img src={ctaImage} alt=""></img>
         </div>
       </div>
     </section>

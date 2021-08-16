@@ -8,7 +8,8 @@ import Login from './pages/login';
 import Register from './pages/register';
 import Faqs from './pages/faqs';
 import Dashboard from './pages/dashboard';
-import Settings from './pages/settings';
+import AccountSettings from './pages/accountsettings';
+import SiteSettings from './pages/sitesettings';
 import Support from './pages/support';
 import Notifications from './pages/notifications';
 import Devices from './pages/devices';
@@ -32,7 +33,8 @@ function App() {
             <Route path="/register" component={Register}></Route>
             <Route path="/faqs" component={Faqs}></Route>
             <Route path="/dashboard" component={Dashboard}></Route>
-            <Route path="/settings" component={Settings}></Route>
+            <Route path="/accountsettings" component={AccountSettings}></Route>
+            <Route path="/sitesettings" component={SiteSettings}></Route>
             <Route path="/support" component={Support}></Route>
             <Route path="/notifications" component={Notifications}></Route>
             <Route path="/devices" component={Devices}></Route>

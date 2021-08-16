@@ -1,38 +1,25 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Button } from '../Button';
-import { CgNametag } from 'react-icons/cg';
-import { GiFamilyTree } from 'react-icons/gi';
+// import { CgNametag } from 'react-icons/cg';
+// import { GiFamilyTree } from 'react-icons/gi';
 import { IoPersonCircle } from 'react-icons/io5';
 import { RiLockPasswordLine } from 'react-icons/ri';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BiPhoneCall } from 'react-icons/bi';
+// import { BiPhoneCall } from 'react-icons/bi';
 // import './registerFormSection.css'; REPLACED BY SCSS
 import './registerFormSection.scss';
 
 function RegisterFormSection() {
   const [_id, setID] = useState('');
-  // const [firstName, setFirstName] = useState('');
-  // const [familyName, setFamilyName] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  // const [confirmPassword, setConfirmPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [email, setEmail] = useState('');
-  // const [phone, setPhone] = useState('');
-
-  // componentDidMount
 
   let handleIDChange = (event) => {
     setID(event.target.value);
   };
-
-  // let handleFirstNameChange = (event) => {
-  //   setFirstName(event.target.value);
-  // };
-
-  // let handleFamilyNameChange = (event) => {
-  //   setFamilyName(event.target.value);
-  // };
 
   let handleUsernameChange = (event) => {
     setUsername(event.target.value);
@@ -42,55 +29,32 @@ function RegisterFormSection() {
     setPassword(event.target.value);
   };
 
-  // let handleConfirmPasswordChange = (event) => {
-  //   setConfirmPassword(event.target.value);
-  // };
+  let handleConfirmPasswordChange = (event) => {
+    setConfirmPassword(event.target.value);
+  };
 
   let handleEmailChange = (event) => {
     setEmail(event.target.value);
   };
 
-  // let handlePhoneChange = (event) => {
-  //   setPhone(event.target.value);
-  // };
-
   const clearState = () => {
     setID('');
-    // setFirstName('');
-    // setFamilyName('');
     setUsername('');
     setPassword('');
+    setConfirmPassword('');
     setEmail('');
-    // setPhone('');
   };
 
-  let handleSubmit = (event) => {
-    event.preventDefault();
+  let checkMatch = () => {
+    return password !== confirmPassword ? false : true;
+  };
 
-    // confirm password then execute code below
-    // const user =
-    //   password !== confirmPassword
-    //     ? alert(`Passwords Don't Match`)
-    //     : (user = {
-    //         _id: username,
-    //         // firstName: firstName,
-    //         // familyName: familyName,
-    //         username: username,
-    //         password: password,
-    //         // confirmPassword: setConfirmPassword,
-    //         email: email,
-    //         // phone: phone,
-    //       });
-
+  let registerUser = () => {
     const user = {
       _id: username,
-      // firstName: firstName,
-      // familyName: familyName,
       username: username,
       password: password,
-      // confirmPassword: setConfirmPassword,
       email: email,
-      // phone: phone,
     };
 
     // for testing purposes
@@ -102,6 +66,13 @@ function RegisterFormSection() {
     });
   };
 
+  let handleSubmit = (event) => {
+    event.preventDefault();
+    return checkMatch() === true
+      ? (registerUser(), alert(`User created.`))
+      : alert(`Passwords do not match!`);
+  };
+
   return (
     <>
       <div className="registersection">
@@ -111,44 +82,6 @@ function RegisterFormSection() {
             <div class="form__subheading">
               <p>Create an account with us</p>
             </div>
-            {/* <div className="form__inputs">
-            <div className="form__inputs__container">
-            <div class="form__icons">
-                <CgNametag size={30} />
-              </div>
-              <input
-              required
-              minLength="2"
-              id="fname"
-              type="text"
-              name="fname"
-              className="form__input"
-              placeholder="Enter your first name"
-              value={firstName}
-              onChange={handleFirstNameChange}
-            />
-            </div>
-          </div> */}
-
-            {/* <div className="form__inputs">
-          <div className="form__inputs__container">
-          <div class="form__icons">
-                <GiFamilyTree size={30} />
-              </div>
-            <input
-              required
-              minLength="2"
-              id="faname"
-              type="text"
-              name="faname"
-              className="form__input"
-              placeholder="Enter your family name"
-              value={familyName}
-              onChange={handleFamilyNameChange}
-            />
-            </div>
-          </div> */}
-
             <div className="form__inputs">
               <div className="form__inputs__container">
                 <div class="form__icons">
@@ -193,16 +126,17 @@ function RegisterFormSection() {
                   <RiLockPasswordLine size={30} />
                 </div>
                 <input
-                  disabled
+                  // disabled
                   required
+                  title="Please check that the passwords match."
                   id="cpassword"
                   type="password"
                   name="cpassword"
                   className="form__input"
-                  placeholder="Confirm your password (field currently disabled)"
-                  // placeholder="Confirm your password"
-                  // value={confirmPassword}
-                  // onChange={handleConfirmPasswordChange}
+                  // placeholder="Confirm your password (field currently disabled)"
+                  placeholder="Confirm your password"
+                  value={confirmPassword}
+                  onChange={handleConfirmPasswordChange}
                 />
               </div>
             </div>
@@ -225,28 +159,6 @@ function RegisterFormSection() {
                 />
               </div>
             </div>
-
-            {/* <div className="form__inputs">
-          <div className="form__inputs__container">
-            <div class="form__icons">
-              <BiPhoneCall size={30} />
-            </div>
-            <input
-              required
-              minLength="10"
-              maxLength="10"
-              // pattern="[-+]?[0-9]"
-              id="phnumber"
-              type="numeric"
-              name="phnumber"
-              className="form__input"
-              placeholder="Enter your phone number"
-              value={phone}
-              onChange={handlePhoneChange}
-            />
-            </div>
-          </div> */}
-
             <div class="form__confirm">
               <div class="form__confirm__tos">
                 <p>

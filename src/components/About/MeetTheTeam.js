@@ -21,7 +21,7 @@ const test = () => {
           <div class="card__grid">
             <div class="card__item">
               <div class="card__image">
-                <img src={member1}></img>
+                <img src={member1} alt=""></img>
               </div>
               <div class="card__title">Saamir Hye</div>
               <div class="card__roletitle">
@@ -40,7 +40,7 @@ const test = () => {
             <div class="card__item">
               <div class="card__image">
                 <div class="card__image">
-                  <img src={member2}></img>
+                  <img src={member2} alt=""></img>
                 </div>
               </div>
               <div class="card__title">Long Le</div>
@@ -56,7 +56,7 @@ const test = () => {
             <div class="card__item">
               <div class="card__image">
                 <div class="card__image">
-                  <img src={member3}></img>
+                  <img src={member3} alt=""></img>
                 </div>
               </div>
               <div class="card__title">Kishen Kumar</div>
@@ -72,7 +72,7 @@ const test = () => {
             <div class="card__item">
               <div class="card__image">
                 <div class="card__image">
-                  <img src={member4}></img>
+                  <img src={member4} alt=""></img>
                 </div>
               </div>
               <div class="card__title">David Chau</div>
@@ -88,7 +88,7 @@ const test = () => {
             <div class="card__item">
               <div class="card__image">
                 <div class="card__image">
-                  <img src={member5}></img>
+                  <img src={member5} alt=""></img>
                 </div>
               </div>
               <div class="card__title">Bao Lam Nguyen</div>
@@ -104,7 +104,7 @@ const test = () => {
             <div class="card__item">
               <div class="card__image">
                 <div class="card__image">
-                  <img src={member6}></img>
+                  <img src={member6} alt=""></img>
                 </div>
               </div>
               <div class="card__title">Cynan Du</div>
@@ -119,7 +119,7 @@ const test = () => {
             <div class="card__item">
               <div class="card__image">
                 <div class="card__image">
-                  <img src={member7}></img>
+                  <img src={member7} alt=""></img>
                 </div>
               </div>
               <div class="card__title">Armaghan Zahid</div>
