@@ -1,4 +1,5 @@
 import React from 'react';
+import age_det from '../../../src/age_det.json';
 import './Dashboard.scss';
 
 import {
@@ -19,81 +20,84 @@ import {
   CartesianGrid,
 } from 'recharts';
 
+//Get data for charts from text files
+console.log(age_det);
 // Array data is to be changed later on when we are able to fetch tinker data // For now, all data below is currently fake-d.
-const totaldetections = [
-  {
-    month: 'JAN',
-    detections: 1006,
-    male: 648,
-    female: 358,
-  },
-  {
-    month: 'FEB',
-    detections: 2340,
-    male: 505,
-    female: 1835,
-  },
-  {
-    month: 'MAR',
-    detections: 3152,
-    male: 2536,
-    female: 616,
-  },
-  {
-    month: 'APR',
-    detections: 4722,
-    male: 1522,
-    female: 3200,
-  },
-  {
-    month: 'MAY',
-    detections: 3315,
-    male: 2696,
-    female: 619,
-  },
-  {
-    month: 'JUN',
-    detections: 3934,
-    male: 2292,
-    female: 1642,
-  },
-  {
-    month: 'JUL',
-    detections: 2366,
-    male: 1358,
-    female: 1008,
-  },
-  {
-    month: 'AUG',
-    detections: 1796,
-    male: 1055,
-    female: 741,
-  },
-  {
-    month: 'SEP',
-    detections: 3555,
-    male: 1565,
-    female: 1990,
-  },
-  {
-    month: 'OCT',
-    detections: 2397,
-    male: 973,
-    female: 424,
-  },
-  {
-    month: 'NOV',
-    detections: 1241,
-    male: 840,
-    female: 401,
-  },
-  {
-    month: 'DEC',
-    detections: 3104,
-    male: 2554,
-    female: 550,
-  },
-];
+const totaldetections = age_det;
+// const totaldetections = [
+//   {
+//     month: 'JAN',
+//     detections: 1006,
+//     male: 648,
+//     female: 358,
+//   },
+//   {
+//     month: 'FEB',
+//     detections: 2340,
+//     male: 505,
+//     female: 1835,
+//   },
+//   {
+//     month: 'MAR',
+//     detections: 3152,
+//     male: 2536,
+//     female: 616,
+//   },
+//   {
+//     month: 'APR',
+//     detections: 4722,
+//     male: 1522,
+//     female: 3200,
+//   },
+//   {
+//     month: 'MAY',
+//     detections: 3315,
+//     male: 2696,
+//     female: 619,
+//   },
+//   {
+//     month: 'JUN',
+//     detections: 3934,
+//     male: 2292,
+//     female: 1642,
+//   },
+//   {
+//     month: 'JUL',
+//     detections: 2366,
+//     male: 1358,
+//     female: 1008,
+//   },
+//   {
+//     month: 'AUG',
+//     detections: 1796,
+//     male: 1055,
+//     female: 741,
+//   },
+//   {
+//     month: 'SEP',
+//     detections: 3555,
+//     male: 1565,
+//     female: 1990,
+//   },
+//   {
+//     month: 'OCT',
+//     detections: 2397,
+//     male: 973,
+//     female: 424,
+//   },
+//   {
+//     month: 'NOV',
+//     detections: 1241,
+//     male: 840,
+//     female: 401,
+//   },
+//   {
+//     month: 'DEC',
+//     detections: 3104,
+//     male: 2554,
+//     female: 550,
+//   },
+// ];
 const agedetections = [
   {
     agegroup: '0-10yr',
