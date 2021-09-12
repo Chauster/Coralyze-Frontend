@@ -1,5 +1,8 @@
 import React from 'react';
+import total_det from '../../../src/total_det.json';
 import age_det from '../../../src/age_det.json';
+import gender_det from '../../../src/gender_det.json';
+import res_data from '../../../src/res_data.json';
 import './Dashboard.scss';
 
 import {
@@ -21,125 +24,12 @@ import {
 } from 'recharts';
 
 //Get data for charts from text files
-console.log(age_det);
 // Array data is to be changed later on when we are able to fetch tinker data // For now, all data below is currently fake-d.
-const totaldetections = age_det;
-// const totaldetections = [
-//   {
-//     month: 'JAN',
-//     detections: 1006,
-//     male: 648,
-//     female: 358,
-//   },
-//   {
-//     month: 'FEB',
-//     detections: 2340,
-//     male: 505,
-//     female: 1835,
-//   },
-//   {
-//     month: 'MAR',
-//     detections: 3152,
-//     male: 2536,
-//     female: 616,
-//   },
-//   {
-//     month: 'APR',
-//     detections: 4722,
-//     male: 1522,
-//     female: 3200,
-//   },
-//   {
-//     month: 'MAY',
-//     detections: 3315,
-//     male: 2696,
-//     female: 619,
-//   },
-//   {
-//     month: 'JUN',
-//     detections: 3934,
-//     male: 2292,
-//     female: 1642,
-//   },
-//   {
-//     month: 'JUL',
-//     detections: 2366,
-//     male: 1358,
-//     female: 1008,
-//   },
-//   {
-//     month: 'AUG',
-//     detections: 1796,
-//     male: 1055,
-//     female: 741,
-//   },
-//   {
-//     month: 'SEP',
-//     detections: 3555,
-//     male: 1565,
-//     female: 1990,
-//   },
-//   {
-//     month: 'OCT',
-//     detections: 2397,
-//     male: 973,
-//     female: 424,
-//   },
-//   {
-//     month: 'NOV',
-//     detections: 1241,
-//     male: 840,
-//     female: 401,
-//   },
-//   {
-//     month: 'DEC',
-//     detections: 3104,
-//     male: 2554,
-//     female: 550,
-//   },
-// ];
-const agedetections = [
-  {
-    agegroup: '0-10yr',
-    detections: 200,
-  },
-  {
-    agegroup: '11-20yr',
-    detections: 750,
-  },
-  {
-    agegroup: '21-40yr',
-    detections: 500,
-  },
-  {
-    agegroup: '41-60yr',
-    detections: 550,
-  },
-  {
-    agegroup: '61-70yr',
-    detections: 420,
-  },
-  {
-    agegroup: '70+yr',
-    detections: 850,
-  },
-];
-const genderdetections = [
-  {
-    male: 18544,
-    gender: 'Male',
-  },
-  {
-    female: 13384,
-    gender: 'Female',
-  },
-];
-const data = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
-];
+const totaldetections = total_det;
+const agedetections = age_det;
+const genderdetections = gender_det;
+const data = res_data;
+
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
