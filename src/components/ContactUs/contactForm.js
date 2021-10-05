@@ -32,7 +32,7 @@ function ContactForm() {
   };
 
   return (
-    <>
+    <React.Fragment>
       <div className="form__container">
         <div className="form__content-left">
           <img src={ContactUs} alt="" />
@@ -116,7 +116,7 @@ function ContactForm() {
           </form>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

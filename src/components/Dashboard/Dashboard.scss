@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 .dashboard {
-  position: relative;
-  top: 0px;
-  left: 250px;
-  background: var(--white);
-  height: 100vh;
-  width: calc(100% - 250px);
-  padding-left: 1%;
-  padding-right: 1%;
+  // position: relative;
+  // top: 80px;
+  // left: 200px;
+  // margin-left: 20px;
+  // background: var(--white);
+  // height: auto;
+  // width: calc(100% - 240px);
+  // padding-left: 1%;
+  // padding-right: 1%;
+  // width: max-content;
 
   &__title {
     display: inline-block;
-    color: #3e74ff;
+    color: hsla(223, 100%, 62%, 0.863);
     margin: 10px;
-    padding: 5px;
+    // padding: 5px;
     // text-transform: uppercase;
     h3 {
       font-family: 'Gilroy-Bold';
@@ -24,8 +26,8 @@
     height: 100vh;
 
     &__one__subheading {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
       background: #2a3050;
       border: 5px solid #3e74ff;
       border-bottom: hidden;
@@ -36,15 +38,16 @@
       justify-content: space-between;
       p {
         color: #747474;
-        font-family: Nunito;
+        // font-family: Nunito;
+        font-family: 'Gilroy-Regular';
         font-weight: 100;
         font-size: 1.125rem;
       }
     }
     &__one__buttons {
       &__daily {
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         padding: 5px 15px;
         background: transparent;
         color: #fff;
@@ -68,8 +71,8 @@
       }
 
       &__yearly {
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         padding: 5px 15px;
         background: transparent;
         color: #fff;
@@ -90,24 +93,26 @@
       padding-left: 1%;
       p {
         color: #fff;
-        font-family: Nunito;
+        // font-family: Nunito;
+        font-family: 'Gilroy-Bold';
         font-weight: 100;
         font-size: 2rem;
       }
     }
     &__two__subheading {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
       background: #2a3050;
       border: 5px solid #3e74ff;
       border-bottom: hidden;
       padding-left: 3%;
       padding-top: 3%;
       padding-right: 3%;
-      width: 100%;
+      // width: 100%;
       p {
         color: #747474;
-        font-family: Nunito;
+        // font-family: Nunito;
+        font-family: 'Gilroy-Regular';
         font-weight: 100;
         font-size: 1.125rem;
       }
@@ -118,27 +123,29 @@
       border-top: hidden;
       border-bottom: hidden;
       padding-left: 3%;
-      width: 100%;
+      // width: 100%;
       p {
         color: #fff;
-        font-family: Nunito;
+        // font-family: Nunito;
+        font-family: 'Gilroy-Bold';
         font-weight: 100;
         font-size: 1.75rem;
       }
     }
     &__three__subheading {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
       background: #2a3050;
       border: 5px solid #3e74ff;
       border-bottom: hidden;
       padding-left: 3%;
       padding-top: 3%;
       padding-right: 3%;
-      width: 100%;
+      // width: 100%;
       p {
         color: #747474;
-        font-family: Nunito;
+        // font-family: Nunito;
+        font-family: 'Gilroy-Regular';
         font-weight: 100;
         font-size: 1.125rem;
       }
@@ -149,27 +156,29 @@
       border-top: hidden;
       border-bottom: hidden;
       padding-left: 3%;
-      width: 100%;
+      // width: 100%;
       p {
         color: #fff;
-        font-family: Nunito;
+        // font-family: Nunito;
+        font-family: 'Gilroy-Bold';
         font-weight: 100;
         font-size: 1.75rem;
       }
     }
     &__four__subheading {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
       background: #2a3050;
       border: 5px solid #3e74ff;
       border-bottom: hidden;
       padding-left: 3%;
       padding-top: 3%;
       padding-right: 3%;
-      width: 100%;
+      // width: 100%;
       p {
         color: #747474;
-        font-family: Nunito;
+        // font-family: Nunito;
+        font-family: 'Gilroy-Regular';
         font-weight: 100;
         font-size: 1.125rem;
       }
@@ -180,10 +189,11 @@
       border-top: hidden;
       border-bottom: hidden;
       padding-left: 3%;
-      width: 100%;
+      // width: 100%;
       p {
         color: #fff;
-        font-family: Nunito;
+        // font-family: Nunito;
+        font-family: 'Gilroy-Bold';
         font-weight: 100;
         font-size: 1.75rem;
       }

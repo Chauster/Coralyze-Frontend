@@ -11,7 +11,7 @@ function SiteSettings() {
   };
 
   return (
-    <>
+    <React.Fragment>
       <section className="settings">
         <div className="settings__header">
           <h2>Settings.</h2>
@@ -24,6 +24,9 @@ function SiteSettings() {
               <ul className="settings__navbar-list">
                 <li className="settings__navbar-item">
                   <Link to="/accountsettings">Account Information</Link>
+                </li>
+                <li className="settings__navbar-item">
+                  <Link to="/devicemanagement">Device Management</Link>
                 </li>
                 <li className="settings__navbar-item">
                   <Link to="/sitesettings">Site Preferences</Link>
@@ -60,7 +63,7 @@ function SiteSettings() {
           {/* grid ends here */}
         </div>
       </section>
-    </>
+    </React.Fragment>
   );
 }
 

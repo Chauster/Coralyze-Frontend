@@ -3,7 +3,7 @@ import './FaqSection.css';
 
 function FaqSection() {
   return (
-    <>
+    <React.Fragment>
       <div className="faqs__container">
         <h1>Frequently Asked Questions</h1>
         <ul className="faqs__list">
@@ -15,7 +15,7 @@ function FaqSection() {
           <li className="faqs__item">Answer 3.</li>
         </ul>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

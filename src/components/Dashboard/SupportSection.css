@@ -1,6 +1,6 @@
 .main_section {
   /* the below settings ensure the page fits on the RHS of the sidebar */
-  position: relative;
+  /* position: relative;
   top: 0px;
   left: 250px;
   height: auto;
@@ -8,7 +8,7 @@
   width: calc(100% - 250px);
   padding-left: 1%;
   padding-right: 1%;
-  padding-top: 2%;
+  padding-top: 2%; */
 }
 
 .main_section h3 {

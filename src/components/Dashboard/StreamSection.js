@@ -4,7 +4,7 @@ import stream from '../../videos/video1.mp4';
 
 function StreamSection() {
   return (
-    <>
+    <React.Fragment>
       <div className="stream__container">
         <h3>Video stream.</h3>
         {/* please wait... */}
@@ -14,7 +14,7 @@ function StreamSection() {
           Your browser does not support the video tag.
         </video>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

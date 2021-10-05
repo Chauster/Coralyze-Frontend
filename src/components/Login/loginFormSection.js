@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Button } from '../Button';
-import { IoPersonCircle } from 'react-icons/io5';
-import { RiLockPasswordLine } from 'react-icons/ri';
+// import { IoPersonCircle } from 'react-icons/io5';
+// import { RiLockPasswordLine } from 'react-icons/ri';
 import rightimage from '../../images/loginrightimage.svg';
 // import './loginFormSection.css'; REPLACED BY SCSS
 import './loginFormSection.scss';
@@ -52,16 +52,16 @@ function LoginFormSection() {
   };
 
   return (
-    <>
+    <React.Fragment>
       <div className="loginsection">
         <form autoComplete="off" className="form" onSubmit={handleSubmit}>
           <div class="form__left">
             <h1 class="form__title">Login</h1>
             <div className="form__inputs">
               <div class="form__subtitle">
-                <div class="form__icon__username">
+                {/* <div class="form__icon__username">
                   <IoPersonCircle size={30} />
-                </div>
+                </div> */}
                 <label htmlFor="name" className="form__label">
                   Username
                 </label>
@@ -80,9 +80,9 @@ function LoginFormSection() {
             </div>
             <div className="form__inputs">
               <div class="form__subtitle">
-                <div class="form__icon__password">
+                {/* <div class="form__icon__password">
                   <RiLockPasswordLine size={30} />
-                </div>
+                </div> */}
                 <label htmlFor="password" className="form__label">
                   Password
                 </label>
@@ -122,7 +122,7 @@ function LoginFormSection() {
           </div>
         </form>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

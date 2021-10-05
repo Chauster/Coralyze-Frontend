@@ -1,22 +1,20 @@
 .main_section {
+  /* width: fit-content; */
   /* the below settings ensure the page fits on the RHS of the sidebar */
-  position: relative;
-  top: 0px;
-  left: 250px;
-  height: auto;
-  overflow-y: hidden;
-  width: calc(100% - 250px);
-  padding-left: 1%;
-  padding-right: 1%;
-  padding-top: 2%;
+  /* position: relative; */
+  /* top: 0px; */
+  /* left: 250px; */
+  /* height: auto; */
+  /* overflow-y: hidden; */
+  /* width: calc(100% - 250px); */
+  /* padding-left: 1%; */
+  /* padding-right: 1%; */
+  /* padding-top: 2%; */
 }
 
 .main_section-header {
   font-family: 'Gilroy-Bold';
   color: #237c9a;
-  /* display: inline-block; */
-  margin: 10px;
-  /* text-transform: uppercase; */
 }
 
 @media screen and (max-width: 960px) {
@@ -35,9 +33,6 @@
 }
 
 .notif_box {
-  /* max-height: 80%; */
-  /* overflow-y: scroll; */
-  margin: 10px;
   position: relative;
   background-color: #fff;
   border: 1px solid lightgray;

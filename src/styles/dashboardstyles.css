@@ -1,0 +1,46 @@
+.parent {
+  position: relative;
+  width: 100%;
+  height: auto;
+  /* border: 5px blue; */
+}
+
+/* navbar */
+.child-1 {
+  position: absolute;
+  top: 0px;
+}
+
+/* sidebar */
+.child-2 {
+  position: absolute;
+}
+
+.sub-child {
+  font-family: 'Gilroy-Regular';
+  border-radius: 12px;
+  padding: 10px;
+  /* position: fixed; */
+  color: #3e74ff;
+  background-color: var(--secondary-3);
+  z-index: 1;
+  opacity: 0.95;
+  margin-left: 20px;
+  top: 80px;
+  left: 7%;
+  width: 200px;
+  height: auto;
+  position: fixed;
+}
+
+/* page focus content */
+.child-3 {
+  position: absolute;
+  /* padding: 10px; */
+  top: 80px;
+  left: calc(7% + 240px);
+  /* right: 10px; */
+  /* bottom: 10px; */
+  /* width: auto; */
+  width: calc(100% - 32rem);
+}

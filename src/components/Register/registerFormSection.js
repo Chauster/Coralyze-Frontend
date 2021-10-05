@@ -3,9 +3,9 @@ import axios from 'axios';
 import { Button } from '../Button';
 // import { CgNametag } from 'react-icons/cg';
 // import { GiFamilyTree } from 'react-icons/gi';
-import { IoPersonCircle } from 'react-icons/io5';
-import { RiLockPasswordLine } from 'react-icons/ri';
-import { HiOutlineMail } from 'react-icons/hi';
+// import { IoPersonCircle } from 'react-icons/io5';
+// import { RiLockPasswordLine } from 'react-icons/ri';
+// import { HiOutlineMail } from 'react-icons/hi';
 // import { BiPhoneCall } from 'react-icons/bi';
 // import './registerFormSection.css'; REPLACED BY SCSS
 import './registerFormSection.scss';
@@ -74,7 +74,7 @@ function RegisterFormSection() {
   };
 
   return (
-    <>
+    <React.Fragment>
       <div className="registersection">
         <form autoComplete="off" className="form" onSubmit={handleSubmit}>
           <div class="form__left">
@@ -84,9 +84,9 @@ function RegisterFormSection() {
             </div>
             <div className="form__inputs">
               <div className="form__inputs__container">
-                <div class="form__icons">
+                {/* <div class="form__icons">
                   <IoPersonCircle size={30} />
-                </div>
+                </div> */}
                 <input
                   required
                   minLength="3"
@@ -102,9 +102,9 @@ function RegisterFormSection() {
             </div>
             <div className="form__inputs">
               <div className="form__inputs__container">
-                <div class="form__icons">
+                {/* <div class="form__icons">
                   <RiLockPasswordLine size={30} />
-                </div>
+                </div> */}
                 <input
                   required
                   minLength="8"
@@ -122,9 +122,9 @@ function RegisterFormSection() {
             </div>
             <div className="form__inputs">
               <div className="form__inputs__container">
-                <div class="form__icons">
+                {/* <div class="form__icons">
                   <RiLockPasswordLine size={30} />
-                </div>
+                </div> */}
                 <input
                   // disabled
                   required
@@ -142,9 +142,9 @@ function RegisterFormSection() {
             </div>
             <div className="form__inputs">
               <div className="form__inputs__container">
-                <div class="form__icons">
+                {/* <div class="form__icons">
                   <HiOutlineMail size={30} />
-                </div>
+                </div> */}
                 <input
                   required
                   title="The domain portion of the email address is invalid (the portion after the @)."
@@ -235,7 +235,7 @@ function RegisterFormSection() {
           </div>
         </form>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

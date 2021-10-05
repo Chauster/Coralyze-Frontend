@@ -2,8 +2,13 @@
 * {
   font-family: Montserrat;
 } */
+.hero {
+  margin-top: 80px;
+}
+
 @media (min-width: 64em) {
   .hero {
+    margin-top: 80px;
     visibility: hidden;
     display: flex;
     align-items: center;

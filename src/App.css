@@ -23,6 +23,31 @@
   src: url('fonts/Gilroy-Heavy.woff');
 }
 
+body {
+  overflow: overlay;
+  /* margin-top: 100px; */
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+  border-radius: 10px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
