@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <div>
       <nav class="navbar">
-        <h3>Get started.</h3>
+        Get started.
         <ul>
           <li>
             <a class="navbar__link" href="#Introduction">
@@ -41,7 +41,7 @@ const Sidebar = () => {
           </li>
           <li>
             <a class="navbar__link" href="#Introduction">
-              MORE TO BE ADDED SOON
+              More to be added soon.
             </a>
           </li>
         </ul>

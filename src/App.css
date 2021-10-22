@@ -25,12 +25,10 @@
 
 body {
   overflow: overlay;
-  /* margin-top: 100px; */
+  scrollbar-width: thin;
 }
 
 html {
-  overflow-y: scroll;
-  overflow-x: hidden;
   scrollbar-width: thin;
 }
 
@@ -52,7 +50,6 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: 'Montserrat'; */
   font-family: 'Gilroy-Regular', sans-serif;
 }
 

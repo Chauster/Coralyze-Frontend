@@ -1,7 +1,7 @@
 .form__container {
   margin-top: 80px;
   position: relative;
-  background: var(--ltbackground);
+  /* background: var(--ltbackground); */
   color: var(--black);
   display: flex;
   flex-direction: column;

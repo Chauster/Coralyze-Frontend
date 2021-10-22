@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import DashboardNavbar from '../components/Dashboard/DashboardNavbar';
-import NotificationsSection from '../components/Dashboard/NotificationsSection';
+import DeviceModify from '../components/Dashboard/Settings/DeviceModify';
 import '../styles/dashboardstyles.css';
 
-function notifications() {
+function devicemodify() {
   return (
     <React.Fragment>
       <div className="parent">
@@ -17,11 +17,11 @@ function notifications() {
           </div>
         </div>
         <div className="child-3">
-          <NotificationsSection></NotificationsSection>
+          <DeviceModify></DeviceModify>
         </div>
       </div>
     </React.Fragment>
   );
 }
 
-export default notifications;
+export default devicemodify;

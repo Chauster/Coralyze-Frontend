@@ -25,13 +25,13 @@ const deviceSchema = new Schema(
       trim: true,
       minLength: 5,
     },
-    port: {
-      type: String,
-      required: true,
-      unique: false,
-      trim: true,
-      minLength: 2,
-    },
+    // port: {
+    //   type: String,
+    //   required: true,
+    //   unique: false,
+    //   trim: true,
+    //   minLength: 2,
+    // },
   },
   {
     timestamps: true,

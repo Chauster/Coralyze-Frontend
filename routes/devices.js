@@ -11,13 +11,13 @@ router.route('/add').post((req, res) => {
   const _id = req.body._id;
   const name = req.body.name;
   const ip_add = req.body.ip_add;
-  const port = req.body.port;
+  // const port = req.body.port;
 
   const newDevice = new Device({
     _id,
     name,
     ip_add,
-    port,
+    // port,
   });
 
   newDevice
@@ -44,7 +44,7 @@ router.route('/update/:id').post((req, res) => {
       device._id = req.body._id;
       device.name = req.body.name;
       device.ip_add = req.body.ip_add;
-      device.port = req.body.port;
+      // device.port = req.body.port;
 
       device
         .save()

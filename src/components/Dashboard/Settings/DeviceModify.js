@@ -1,8 +1,9 @@
+// import axios from 'axios';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Button } from '../../Button';
 // import defaultimg from '../../../images/portraits/defaultimg.jpg';
-import './DeviceManagement.css';
+import './DeviceModify.css';
 import { FiCpu } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
@@ -24,63 +25,48 @@ function DeviceManagement() {
     setIP('');
   };
 
-  // useEffect(() => {
-  //   async function fetchDevices() {
-  //     const { data } = await axios.post('http://localhost:5000/devices');
-  //     setDeviceList(data);
-  //     console.log(data);
-  //   }
-  //   fetchDevices();
-  // }, [deviceList]);
-
-  let handleSubmit = (event) => {
-    event.preventDefault();
-
-    const device = {
-      _id: name,
-      name: name,
-      ip_add: ip_add,
-    };
-
-    axios.post('http://localhost:5000/devices/add', device).then((res) => {
-      alert(`${res.data}`);
-      console.log(res.data);
-      console.log('Device added.');
-      clearState();
-    });
-  };
+  useEffect(() => {
+    axios
+      .get('http://localhost:5000/devices')
+      .then((res) => {
+        setDeviceList(res.data);
+        console.log(res.data); // testing purposes only
+      })
+      .catch((err) => {
+        console.log('No devices to display!');
+        console.log('Error: ' + err);
+      }, []);
+  });
 
   return (
     <React.Fragment>
       <div className="device-mgmt__container">
-        <div className="device-mgmt__container-header">Device Management</div>
+        <div className="device-mgmt__container-header">Device Modification</div>
         {/* device list start */}
         <ul className="dev__list">
           {Object.keys(deviceList).map((device) => (
             <li className="dev__box">
-              <Link to="/devicemodify">
-                <span className="dev__icon">
-                  <FiCpu />
-                </span>
-                <br />
-                <span key={deviceList[device]._id} className="dev__name">
-                  {deviceList[device].name}
-                </span>
-                <br />
-                <span key={deviceList[device]._id} className="dev__ip">
-                  {deviceList[device].ip_add}
-                </span>
-              </Link>
+              <span className="dev__icon">
+                <FiCpu />
+              </span>
+              <br />
+              <span key={deviceList[device]._id} className="dev__name">
+                {deviceList[device].name}
+              </span>
+              <br />
+              <span key={deviceList[device]._id} className="dev__ip">
+                {deviceList[device].ip_add}
+              </span>
             </li>
           ))}
         </ul>
         {/* device list end */}
         {/* form start */}
         <div className="device-mgmt__form">
-          <form autoComplete="off" className="form" onSubmit={handleSubmit}>
+          <form autoComplete="off" className="form" /*onSubmit={handleSubmit}*/>
             <div className="device-mgmt__form-inputs">
               <label htmlFor="name" className="device-mgmt__label">
-                Device Name
+                New Device Name
               </label>
               <input
                 required
@@ -88,7 +74,7 @@ function DeviceManagement() {
                 id="name"
                 type="text"
                 name="name"
-                placeholder="Enter device name"
+                placeholder="Enter new device name"
                 className="device-mgmt__form-input"
                 value={name}
                 onChange={handleNameChange}
@@ -96,7 +82,7 @@ function DeviceManagement() {
             </div>
             <div className="device-mgmt__form-inputs">
               <label htmlFor="name" className="device-mgmt__label">
-                Device IP
+                New Device IP
               </label>
               <input
                 required
@@ -104,7 +90,7 @@ function DeviceManagement() {
                 id="ip_add"
                 type="text"
                 name="ip_add"
-                placeholder="Enter ip address"
+                placeholder="Enter new ip address"
                 className="device-mgmt__form-input"
                 value={ip_add}
                 onChange={handleIPChange}
@@ -114,18 +100,27 @@ function DeviceManagement() {
             <div className="device-mgmt__button-container">
               <div className="mgmt__btn">
                 <Button
-                  className="mgmt__button"
                   buttonSize="btn--medium"
                   buttonColor="primary"
-                  type="submit"
+                  // type="submit"
                 >
-                  Add
+                  Edit
+                </Button>
+              </div>
+              <div className="mgmt__btn">
+                <Button
+                  buttonSize="btn--medium"
+                  buttonColor="primary"
+                  // type="submit"
+                >
+                  Remove
                 </Button>
               </div>
             </div>
             {/* form buttons end */}
             <span className="dev__note">
-              To edit or remove a device, click on the devices above.
+              To add a new device, click on the 'Device Management' link on the
+              sidebar.
             </span>
           </form>
         </div>

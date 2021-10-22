@@ -5,7 +5,7 @@
   top: 0%;
   transform: translateX(-50%);
   border-radius: 12px;
-  background-color: var(--secondary-3);
+  background-color: #3e74ff;
   height: 60px;
   width: 85%;
   display: flex;
@@ -13,7 +13,6 @@
   align-items: center;
   font-family: 'Gilroy-Medium';
   font-size: medium;
-  /* text-transform: capitalize; */
   z-index: 999;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
   opacity: 0.95;
@@ -63,11 +62,12 @@
 
 .nav__item:hover {
   /* border-bottom: 2px solid #3e74ff; */
-  color: #3e74ff;
+  /* color: #3e74ff; */
+  color: lightgray;
 }
 
 .nav__links {
-  color: #c2c2c2;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -86,9 +86,11 @@
 .btn__link {
   background-color: #3e74ff;
 }
+
 .btn__link button {
   background-color: #3e74ff;
 }
+
 @media screen and (max-width: 960px) {
   .NavbarItems {
     position: relative;
@@ -107,9 +109,9 @@
   }
 
   .nav__menu.active {
-    /* height: 100%; */
-    background: #f3f3f3;
+    background: #fff;
     left: 0;
+    width: 100%;
     opacity: 1;
     transition: all 0.6s ease;
     z-index: 1;
@@ -139,20 +141,21 @@
   }
 
   .logo {
-    position: absolute;
-    top: -2px;
-    left: 30px;
+    margin-top: 24px;
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .menu__icon {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
+    margin-top: 24px;
+    justify-self: end;
+    align-items: center;
     font-size: 1.8rem;
+    justify-content: center;
     cursor: pointer;
-    filter: invert(50%);
   }
 
   .fa-times {
@@ -172,25 +175,5 @@
     height: 60px;
     border: none;
     border-radius: 10px;
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .navbar__container {
-    background-color: var(--secondary-3);
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--FontSm);
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  .navbar__wrapper {
-    position: sticky;
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
   }
 }
